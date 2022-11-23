@@ -58,14 +58,17 @@ final class WalletRepositoryImpl: WalletRepository {
     }
     
     func getTransaction(txHash: String) -> Response.TransactionByHashResult? {
-        let request: Request<Response.TransactionByHashResult> = iconService.getTransaction(hash: txHash)
-        let response = request.execute()
-        
-        switch response {
-        case .success(let transaction):
-            return transaction
-        case .failure (_):
-            return nil
+        var transactionResult: Response.TransactionByHashResult?
+        while transactionResult == nil {
+            let request: Request<Response.TransactionByHashResult> = iconService.getTransaction(hash: txHash)
+            let response = request.execute()
+            switch response {
+            case .success(let transaction):
+                transactionResult = transaction
+            case .failure (_):
+                transactionResult = nil
+            }
         }
+        return transactionResult
     }
 }
