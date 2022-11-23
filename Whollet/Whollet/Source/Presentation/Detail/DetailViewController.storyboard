@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TitilliumWeb-Bold.ttf">
+            <string>TitilliumWeb-Bold</string>
+        </array>
+        <array key="TitilliumWeb-Regular.ttf">
+            <string>TitilliumWeb-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="Y6W-OH-hqX" customClass="DetailViewController" customModule="Whollet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XWv-MF-3SU" userLabel="Safe View">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="47"/>
+                                <color key="backgroundColor" red="0.92941176470588238" green="0.94509803921568625" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Db-Hj-Bxj" userLabel="Info View">
+                                <rect key="frame" x="0.0" y="47" width="428" height="259.33333333333331"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oDh-ws-TkM" userLabel="Coin Image View">
+                                        <rect key="frame" x="41.000000000000007" y="30.000000000000007" width="87.666666666666686" height="87.666666666666686"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="oDh-ws-TkM" secondAttribute="height" id="OfV-iQ-Jx6"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bitcoin - BTC" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0M-Hk-xtH">
+                                        <rect key="frame" x="168.66666666666663" y="37" width="220.33333333333337" height="26"/>
+                                        <fontDescription key="fontDescription" name="TitilliumWeb-Bold" family="Titillium Web" pointSize="17"/>
+                                        <color key="textColor" red="0.20392156862745098" green="0.47843137254901957" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDd-bj-wsq">
+                                        <rect key="frame" x="168.66666666666663" y="78" width="220.33333333333337" height="32"/>
+                                        <string key="text">$20,702.22
+</string>
+                                        <fontDescription key="fontDescription" name="TitilliumWeb-Bold" family="Titillium Web" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Market cap rank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbx-Ef-vws">
+                                        <rect key="frame" x="41" y="140" width="135.66666666666666" height="30.666666666666657"/>
+                                        <fontDescription key="fontDescription" name="TitilliumWeb-Regular" family="Titillium Web" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wra-JD-rjy">
+                                        <rect key="frame" x="342.66666666666669" y="140" width="46.333333333333314" height="30.666666666666657"/>
+                                        <fontDescription key="fontDescription" name="TitilliumWeb-Bold" family="Titillium Web" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price change 24h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9X-Zx-8o3">
+                                        <rect key="frame" x="41" y="188.66666666666666" width="144.66666666666666" height="30.666666666666657"/>
+                                        <fontDescription key="fontDescription" name="TitilliumWeb-Regular" family="Titillium Web" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="901-7s-HBy">
+                                        <rect key="frame" x="342.66666666666669" y="188.66666666666666" width="46.333333333333314" height="30.666666666666657"/>
+                                        <fontDescription key="fontDescription" name="TitilliumWeb-Bold" family="Titillium Web" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.92941176470588238" green="0.94509803921568625" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.20392156862745098" green="0.47843137254901957" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="wbx-Ef-vws" firstAttribute="top" secondItem="lDd-bj-wsq" secondAttribute="bottom" constant="30" id="2Pa-Lf-oTG"/>
+                                    <constraint firstItem="S9X-Zx-8o3" firstAttribute="leading" secondItem="wbx-Ef-vws" secondAttribute="leading" id="2bu-Oz-NxS"/>
+                                    <constraint firstItem="lDd-bj-wsq" firstAttribute="top" secondItem="i0M-Hk-xtH" secondAttribute="bottom" constant="15" id="72Y-7L-npE"/>
+                                    <constraint firstItem="wbx-Ef-vws" firstAttribute="leading" secondItem="oDh-ws-TkM" secondAttribute="leading" id="CtV-xg-44O"/>
+                                    <constraint firstAttribute="bottom" secondItem="S9X-Zx-8o3" secondAttribute="bottom" constant="40" id="HGw-6j-WN0"/>
+                                    <constraint firstAttribute="trailing" secondItem="i0M-Hk-xtH" secondAttribute="trailing" constant="39" id="JH4-Ns-a12"/>
+                                    <constraint firstItem="wra-JD-rjy" firstAttribute="trailing" secondItem="lDd-bj-wsq" secondAttribute="trailing" id="S2W-cl-1fK"/>
+                                    <constraint firstItem="lDd-bj-wsq" firstAttribute="leading" secondItem="oDh-ws-TkM" secondAttribute="trailing" constant="40" id="aCJ-XG-Da8"/>
+                                    <constraint firstItem="wra-JD-rjy" firstAttribute="top" secondItem="wbx-Ef-vws" secondAttribute="top" id="gVu-CR-lIQ"/>
+                                    <constraint firstItem="901-7s-HBy" firstAttribute="trailing" secondItem="wra-JD-rjy" secondAttribute="trailing" id="kPO-dx-xVJ"/>
+                                    <constraint firstItem="lDd-bj-wsq" firstAttribute="trailing" secondItem="i0M-Hk-xtH" secondAttribute="trailing" id="l3u-5G-RC3"/>
+                                    <constraint firstItem="i0M-Hk-xtH" firstAttribute="top" secondItem="oDh-ws-TkM" secondAttribute="top" constant="7" id="oVh-cF-2ny"/>
+                                    <constraint firstItem="oDh-ws-TkM" firstAttribute="top" secondItem="2Db-Hj-Bxj" secondAttribute="top" constant="30" id="pqR-o6-pts"/>
+                                    <constraint firstItem="901-7s-HBy" firstAttribute="top" secondItem="S9X-Zx-8o3" secondAttribute="top" id="sLR-8w-3r8"/>
+                                    <constraint firstItem="i0M-Hk-xtH" firstAttribute="leading" secondItem="oDh-ws-TkM" secondAttribute="trailing" constant="40" id="ubL-P9-aX4"/>
+                                    <constraint firstItem="oDh-ws-TkM" firstAttribute="leading" secondItem="2Db-Hj-Bxj" secondAttribute="leading" constant="41" id="y01-Ji-GSa"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mEr-Jw-99X" userLabel="Chart Cointainer">
+                                <rect key="frame" x="0.0" y="286.33333333333331" width="428" height="605.66666666666674"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Abm-k3-f8Y" userLabel="List Button View">
+                                        <rect key="frame" x="0.0" y="569.66666666666674" width="428" height="28"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffi-HN-tfo">
+                                                <rect key="frame" x="0.0" y="0.0" width="107" height="28"/>
+                                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                <fontDescription key="fontDescription" name="TitilliumWeb-Regular" family="Titillium Web" pointSize="15"/>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Day"/>
+                                                <connections>
+                                                    <action selector="dayClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="KVh-0O-tEZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjq-5R-fVs">
+                                                <rect key="frame" x="107" y="0.0" width="107" height="28"/>
+                                                <fontDescription key="fontDescription" name="TitilliumWeb-Regular" family="Titillium Web" pointSize="15"/>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Week"/>
+                                                <connections>
+                                                    <action selector="weekClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Aoc-sO-D18"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1T-5M-r2K">
+                                                <rect key="frame" x="214" y="0.0" width="107" height="28"/>
+                                                <fontDescription key="fontDescription" name="TitilliumWeb-Regular" family="Titillium Web" pointSize="15"/>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Month"/>
+                                                <connections>
+                                                    <action selector="monthClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="K8a-KD-DrR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adp-rV-6RY">
+                                                <rect key="frame" x="321" y="0.0" width="107" height="28"/>
+                                                <fontDescription key="fontDescription" name="TitilliumWeb-Regular" family="Titillium Web" pointSize="15"/>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Year"/>
+                                                <connections>
+                                                    <action selector="yearClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Mm8-cJ-C00"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="bjq-5R-fVs" firstAttribute="leading" secondItem="Ffi-HN-tfo" secondAttribute="trailing" id="3Yu-yD-xC5"/>
+                                            <constraint firstItem="adp-rV-6RY" firstAttribute="leading" secondItem="j1T-5M-r2K" secondAttribute="trailing" id="4GE-pq-cl0"/>
+                                            <constraint firstItem="Ffi-HN-tfo" firstAttribute="leading" secondItem="Abm-k3-f8Y" secondAttribute="leading" id="JwE-At-9sf"/>
+                                            <constraint firstItem="bjq-5R-fVs" firstAttribute="top" secondItem="Abm-k3-f8Y" secondAttribute="top" id="LvX-YW-QPV"/>
+                                            <constraint firstAttribute="bottom" secondItem="bjq-5R-fVs" secondAttribute="bottom" id="M5z-50-kci"/>
+                                            <constraint firstAttribute="trailing" secondItem="adp-rV-6RY" secondAttribute="trailing" id="MDz-1j-FGM"/>
+                                            <constraint firstItem="j1T-5M-r2K" firstAttribute="leading" secondItem="bjq-5R-fVs" secondAttribute="trailing" id="Om6-Pn-rsi"/>
+                                            <constraint firstAttribute="bottom" secondItem="j1T-5M-r2K" secondAttribute="bottom" id="R5m-39-VSL"/>
+                                            <constraint firstItem="adp-rV-6RY" firstAttribute="top" secondItem="Abm-k3-f8Y" secondAttribute="top" id="ZTc-dg-53x"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ffi-HN-tfo" secondAttribute="bottom" id="fVY-Xa-7RZ"/>
+                                            <constraint firstItem="j1T-5M-r2K" firstAttribute="top" secondItem="Abm-k3-f8Y" secondAttribute="top" id="jVA-XI-tf9"/>
+                                            <constraint firstAttribute="bottom" secondItem="adp-rV-6RY" secondAttribute="bottom" id="k5X-IA-xnI"/>
+                                            <constraint firstItem="Ffi-HN-tfo" firstAttribute="top" secondItem="Abm-k3-f8Y" secondAttribute="top" id="rwW-Yg-PKg"/>
+                                            <constraint firstAttribute="height" constant="28" id="wng-jD-fSy"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hVI-wC-dra" userLabel="Chart View" customClass="LineChartView" customModule="Charts">
+                                        <rect key="frame" x="20" y="20" width="388" height="529.66666666666663"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.20392156862745098" green="0.47843137254901957" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="bjq-5R-fVs" firstAttribute="width" secondItem="mEr-Jw-99X" secondAttribute="width" multiplier="0.25" id="1Kb-mP-EtJ"/>
+                                    <constraint firstItem="Abm-k3-f8Y" firstAttribute="top" secondItem="hVI-wC-dra" secondAttribute="bottom" constant="20" id="4A4-de-7Eg"/>
+                                    <constraint firstAttribute="bottom" secondItem="Abm-k3-f8Y" secondAttribute="bottom" constant="8" id="9c5-Uy-ZXF"/>
+                                    <constraint firstAttribute="trailing" secondItem="hVI-wC-dra" secondAttribute="trailing" constant="20" id="AO4-Nz-afo"/>
+                                    <constraint firstItem="hVI-wC-dra" firstAttribute="top" secondItem="mEr-Jw-99X" secondAttribute="top" constant="20" id="HUg-zn-ZqN"/>
+                                    <constraint firstItem="j1T-5M-r2K" firstAttribute="width" secondItem="mEr-Jw-99X" secondAttribute="width" multiplier="0.25" id="Z3x-SD-Ej0"/>
+                                    <constraint firstItem="hVI-wC-dra" firstAttribute="leading" secondItem="mEr-Jw-99X" secondAttribute="leading" constant="20" id="by8-3t-b3N"/>
+                                    <constraint firstItem="Ffi-HN-tfo" firstAttribute="width" secondItem="mEr-Jw-99X" secondAttribute="width" multiplier="0.25" id="ev1-g2-POd"/>
+                                    <constraint firstItem="Abm-k3-f8Y" firstAttribute="leading" secondItem="mEr-Jw-99X" secondAttribute="leading" id="g5i-OY-Px6"/>
+                                    <constraint firstAttribute="trailing" secondItem="Abm-k3-f8Y" secondAttribute="trailing" id="z56-WV-P2q"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iwt-e8-KfV" userLabel="Safe Bottom View">
+                                <rect key="frame" x="0.0" y="892" width="428" height="34"/>
+                                <color key="backgroundColor" red="0.20392156862745098" green="0.47843137254901957" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Iwt-e8-KfV" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="9IF-Ot-W1M"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="XWv-MF-3SU" secondAttribute="trailing" id="9mu-g6-3VO"/>
+                            <constraint firstItem="XWv-MF-3SU" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="GxY-oS-gti"/>
+                            <constraint firstItem="XWv-MF-3SU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="HdS-Cn-VSA"/>
+                            <constraint firstItem="2Db-Hj-Bxj" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.28" id="LGn-7b-gET"/>
+                            <constraint firstItem="mEr-Jw-99X" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="LYn-Js-7EI"/>
+                            <constraint firstItem="2Db-Hj-Bxj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="SIA-Dd-dbz"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Iwt-e8-KfV" secondAttribute="trailing" id="Twu-MV-ClP"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="mEr-Jw-99X" secondAttribute="trailing" id="X3w-we-s3A"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="XWv-MF-3SU" secondAttribute="bottom" id="aCK-r2-4zh"/>
+                            <constraint firstItem="oDh-ws-TkM" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="77:812" id="aIg-09-lme"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="mEr-Jw-99X" secondAttribute="bottom" id="adj-FK-Okt"/>
+                            <constraint firstAttribute="bottom" secondItem="Iwt-e8-KfV" secondAttribute="bottom" id="bpL-uo-N23"/>
+                            <constraint firstItem="mEr-Jw-99X" firstAttribute="top" secondItem="2Db-Hj-Bxj" secondAttribute="bottom" constant="-20" id="fXA-Yu-Qij"/>
+                            <constraint firstItem="Iwt-e8-KfV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="q4G-Gk-cZM"/>
+                            <constraint firstItem="2Db-Hj-Bxj" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="sh7-Tl-9aa"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="2Db-Hj-Bxj" secondAttribute="trailing" id="yf0-hX-nCn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="chartContainer" destination="mEr-Jw-99X" id="Swe-EJ-VCd"/>
+                        <outlet property="coinChartView" destination="hVI-wC-dra" id="jvD-Vs-9Ri"/>
+                        <outlet property="coinImage" destination="oDh-ws-TkM" id="DYQ-29-Rxg"/>
+                        <outlet property="coinNaneAndId" destination="i0M-Hk-xtH" id="T02-7F-lKi"/>
+                        <outlet property="coinPrice" destination="lDd-bj-wsq" id="pEi-Kk-DkP"/>
+                        <outlet property="coinPriceChange24h" destination="901-7s-HBy" id="39S-Lk-T2h"/>
+                        <outlet property="coinRank" destination="wra-JD-rjy" id="nuN-7L-5mi"/>
+                        <outlet property="marketText" destination="wbx-Ef-vws" id="Nrf-al-cLC"/>
+                        <outlet property="priceChangeText" destination="S9X-Zx-8o3" id="kSC-GJ-DwC"/>
+                        <outletCollection property="chartTimeTypeButton" destination="Ffi-HN-tfo" collectionClass="NSMutableArray" id="OS7-dV-hqR"/>
+                        <outletCollection property="chartTimeTypeButton" destination="bjq-5R-fVs" collectionClass="NSMutableArray" id="P5w-UB-TXe"/>
+                        <outletCollection property="chartTimeTypeButton" destination="j1T-5M-r2K" collectionClass="NSMutableArray" id="ZKc-qc-ifi"/>
+                        <outletCollection property="chartTimeTypeButton" destination="adp-rV-6RY" collectionClass="NSMutableArray" id="xcz-QI-6va"/>
+                        <outletCollection property="heightConstants" destination="pqR-o6-pts" collectionClass="NSMutableArray" id="gcJ-hl-PY1"/>
+                        <outletCollection property="heightConstants" destination="2Pa-Lf-oTG" collectionClass="NSMutableArray" id="xLC-kd-0ZU"/>
+                        <outletCollection property="heightConstants" destination="HGw-6j-WN0" collectionClass="NSMutableArray" id="fdC-LJ-sI9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119.15887850467288" y="-27.861771058315338"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

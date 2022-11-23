@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TitilliumWeb-Regular.ttf">
+            <string>TitilliumWeb-Regular</string>
+        </array>
+        <array key="TitilliumWeb-SemiBold.ttf">
+            <string>TitilliumWeb-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="WelcomeViewController" id="Y6W-OH-hqX" customClass="WelcomeViewController" customModule="Whollet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome" translatesAutoresizingMaskIntoConstraints="NO" id="379-rA-aGR">
+                                <rect key="frame" x="127.33333333333333" y="98" width="138.66666666666669" height="132"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="379-rA-aGR" secondAttribute="height" multiplier="126:120" id="PPC-oz-e3o"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tec-fW-6nT">
+                                <rect key="frame" x="0.0" y="253.99999999999997" width="393" height="42.666666666666657"/>
+                                <fontDescription key="fontDescription" name="TitilliumWeb-Regular" family="Titillium Web" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHOLLET" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLd-u9-bFT">
+                                <rect key="frame" x="0.0" y="306.66666666666669" width="393" height="73.333333333333314"/>
+                                <fontDescription key="fontDescription" name="TitilliumWeb-Regular" family="Titillium Web" pointSize="48"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DyZ-Bb-fxh">
+                                <rect key="frame" x="0.0" y="763" width="393" height="35"/>
+                                <fontDescription key="fontDescription" name="TitilliumWeb-Regular" family="Titillium Web" pointSize="15"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Don’t have an wallet? Create Wallet"/>
+                                <connections>
+                                    <action selector="createWalletOnClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="jPz-UY-0ee"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgY-cg-w3G">
+                                <rect key="frame" x="91.666666666666671" y="684.66666666666663" width="209.66666666666663" height="48.333333333333371"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xgY-cg-w3G" secondAttribute="height" multiplier="200:46" id="dbg-Cn-gXx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="19"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Load Wallet"/>
+                                <connections>
+                                    <action selector="loadWalletOnClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="RR3-JH-pRX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.20392156862745098" green="0.47843137254901957" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="379-rA-aGR" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="5SJ-Ow-O3C"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Tec-fW-6nT" secondAttribute="trailing" id="AJ5-3y-MEp"/>
+                            <constraint firstItem="xgY-cg-w3G" firstAttribute="centerX" secondItem="DyZ-Bb-fxh" secondAttribute="centerX" id="Bjl-Zw-41q"/>
+                            <constraint firstItem="379-rA-aGR" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.155" id="Gj7-zD-Ott"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="DyZ-Bb-fxh" secondAttribute="bottom" constant="20" id="NTz-Qn-coq"/>
+                            <constraint firstItem="DyZ-Bb-fxh" firstAttribute="top" secondItem="xgY-cg-w3G" secondAttribute="bottom" constant="30" id="O9g-Nc-phM"/>
+                            <constraint firstItem="DyZ-Bb-fxh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Oy2-YQ-IXE"/>
+                            <constraint firstItem="DyZ-Bb-fxh" firstAttribute="centerX" secondItem="379-rA-aGR" secondAttribute="centerX" id="YBn-bd-t5l"/>
+                            <constraint firstItem="379-rA-aGR" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="39" id="YgG-eV-hZU"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="DyZ-Bb-fxh" secondAttribute="trailing" id="ZD0-SV-zuC"/>
+                            <constraint firstItem="xgY-cg-w3G" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="46:812" id="dJz-Bs-vLu"/>
+                            <constraint firstItem="nLd-u9-bFT" firstAttribute="top" secondItem="Tec-fW-6nT" secondAttribute="bottom" constant="10" id="mwh-F8-ew1"/>
+                            <constraint firstItem="nLd-u9-bFT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="qfa-U8-J1R"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="nLd-u9-bFT" secondAttribute="trailing" id="rtP-vl-5bR"/>
+                            <constraint firstItem="Tec-fW-6nT" firstAttribute="top" secondItem="379-rA-aGR" secondAttribute="bottom" constant="24" id="tfj-91-8nE"/>
+                            <constraint firstItem="Tec-fW-6nT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="xrN-gD-4i4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="createButton" destination="DyZ-Bb-fxh" id="e98-8c-3A9"/>
+                        <outlet property="loadButton" destination="xgY-cg-w3G" id="0jg-Zk-LKx"/>
+                        <outlet property="welcomeImage" destination="379-rA-aGR" id="Mr0-So-gQJ"/>
+                        <outlet property="welcomeText" destination="Tec-fW-6nT" id="Upo-ER-v5K"/>
+                        <outlet property="wholletText" destination="nLd-u9-bFT" id="vZE-Va-lR7"/>
+                        <outletCollection property="heightConstants" destination="O9g-Nc-phM" collectionClass="NSMutableArray" id="Wb1-Nx-WWh"/>
+                        <outletCollection property="heightConstants" destination="YgG-eV-hZU" collectionClass="NSMutableArray" id="eYl-LW-CPb"/>
+                        <outletCollection property="heightConstants" destination="tfj-91-8nE" collectionClass="NSMutableArray" id="UQq-jM-Rq3"/>
+                        <outletCollection property="heightConstants" destination="mwh-F8-ew1" collectionClass="NSMutableArray" id="kLi-zk-6ZL"/>
+                        <outletCollection property="heightConstants" destination="NTz-Qn-coq" collectionClass="NSMutableArray" id="fE8-QY-KYl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="welcome" width="124" height="122"/>
+    </resources>
+</document>

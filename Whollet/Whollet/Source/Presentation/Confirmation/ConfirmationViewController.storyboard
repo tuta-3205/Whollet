@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TitilliumWeb-Bold.ttf">
+            <string>TitilliumWeb-Bold</string>
+        </array>
+        <array key="TitilliumWeb-Regular.ttf">
+            <string>TitilliumWeb-Regular</string>
+        </array>
+        <array key="TitilliumWeb-SemiBold.ttf">
+            <string>TitilliumWeb-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Confirmation View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ConfirmationViewController" id="Y6W-OH-hqX" customClass="ConfirmationViewController" customModule="Whollet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W95-8t-6F3" userLabel="bottomView">
+                                <rect key="frame" x="0.0" y="274.66666666666669" width="414" height="621.33333333333326"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destination" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPG-wn-ANh">
+                                        <rect key="frame" x="0.0" y="16" width="414" height="23"/>
+                                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="15"/>
+                                        <color key="textColor" red="0.70980392156862748" green="0.73333333333333328" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lA-dc-WXG">
+                                        <rect key="frame" x="22" y="44" width="370" height="58"/>
+                                        <string key="text">3M8w2knJKsr3jqMatY
+iyuraxVvZAmuZ</string>
+                                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iHv-W2-fIH">
+                                        <rect key="frame" x="0.0" y="118" width="414" height="2"/>
+                                        <color key="backgroundColor" red="0.92941176470588238" green="0.94509803921568625" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="nVo-6P-lr0"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j65-yv-88f">
+                                        <rect key="frame" x="22" y="141" width="370" height="26.666666666666657"/>
+                                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="15"/>
+                                        <color key="textColor" red="0.70980392156862748" green="0.73333333333333328" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 ICX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qN0-mU-r04">
+                                        <rect key="frame" x="22" y="167.66666666666663" width="370" height="26.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="19"/>
+                                        <color key="textColor" red="0.050980392156862744" green="0.12156862745098039" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount ($)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iML-CW-LMR">
+                                        <rect key="frame" x="22" y="215" width="370" height="26.666666666666657"/>
+                                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="15"/>
+                                        <color key="textColor" red="0.70980392156862748" green="0.73333333333333328" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 $" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3B-pw-zUB">
+                                        <rect key="frame" x="22" y="241.66666666666669" width="370" height="26.333333333333314"/>
+                                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="19"/>
+                                        <color key="textColor" red="0.050980392156862744" green="0.12156862745098039" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send fee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTf-Dd-XzI">
+                                        <rect key="frame" x="22" y="288.99999999999994" width="370" height="26.666666666666686"/>
+                                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="15"/>
+                                        <color key="textColor" red="0.70980392160000005" green="0.73333333329999995" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0,0015 ICX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDu-EV-vOh">
+                                        <rect key="frame" x="22" y="315.66666666666669" width="370" height="26.333333333333314"/>
+                                        <fontDescription key="fontDescription" name="TitilliumWeb-Bold" family="Titillium Web" pointSize="19"/>
+                                        <color key="textColor" red="0.050980392159999999" green="0.1215686275" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zw-zj-V9y">
+                                        <rect key="frame" x="22" y="362.99999999999994" width="370" height="26.333333333333314"/>
+                                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="15"/>
+                                        <color key="textColor" red="0.70980392160000005" green="0.73333333329999995" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0,0015 ICX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j8n-WD-6c6">
+                                        <rect key="frame" x="22" y="389.33333333333331" width="370" height="26.666666666666686"/>
+                                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="19"/>
+                                        <color key="textColor" red="0.050980392159999999" green="0.1215686275" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total amount ($)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mha-kp-Nk1">
+                                        <rect key="frame" x="22" y="436.99999999999994" width="370" height="26.333333333333314"/>
+                                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="15"/>
+                                        <color key="textColor" red="0.70980392160000005" green="0.73333333329999995" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 $" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OC9-14-lCo">
+                                        <rect key="frame" x="22" y="463.33333333333331" width="370" height="26.666666666666686"/>
+                                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="19"/>
+                                        <color key="textColor" red="0.050980392159999999" green="0.1215686275" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A19-Mv-KzY" userLabel="Confim Button">
+                                        <rect key="frame" x="96.666666666666671" y="510.99999999999994" width="220.66666666666663" height="50.666666666666686"/>
+                                        <color key="backgroundColor" red="0.20392156859999999" green="0.47843137250000001" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="A19-Mv-KzY" secondAttribute="height" multiplier="200:46" id="Hnb-bq-cJ9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="19"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Confirm">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="confirmOnClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Zxz-xu-Qhq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="A19-Mv-KzY" firstAttribute="top" secondItem="OC9-14-lCo" secondAttribute="bottom" constant="21" id="0Du-KT-rYU"/>
+                                    <constraint firstItem="iHv-W2-fIH" firstAttribute="leading" secondItem="W95-8t-6F3" secondAttribute="leading" id="0eQ-Kn-wK3"/>
+                                    <constraint firstItem="cDu-EV-vOh" firstAttribute="top" secondItem="UTf-Dd-XzI" secondAttribute="bottom" id="1ZW-GW-Phq"/>
+                                    <constraint firstAttribute="trailing" secondItem="iHv-W2-fIH" secondAttribute="trailing" id="2kq-aV-XDL"/>
+                                    <constraint firstItem="iHv-W2-fIH" firstAttribute="top" secondItem="4lA-dc-WXG" secondAttribute="bottom" constant="16" id="6FL-CN-ND6"/>
+                                    <constraint firstAttribute="trailing" secondItem="cDu-EV-vOh" secondAttribute="trailing" constant="22" id="7gx-u6-a5K"/>
+                                    <constraint firstAttribute="trailing" secondItem="j8n-WD-6c6" secondAttribute="trailing" constant="22" id="7tj-c4-rry"/>
+                                    <constraint firstItem="j65-yv-88f" firstAttribute="leading" secondItem="W95-8t-6F3" secondAttribute="leading" constant="22" id="8eV-Fc-CGs"/>
+                                    <constraint firstItem="UTf-Dd-XzI" firstAttribute="top" secondItem="a3B-pw-zUB" secondAttribute="bottom" constant="21" id="9Z0-QP-Pyb"/>
+                                    <constraint firstAttribute="trailing" secondItem="iML-CW-LMR" secondAttribute="trailing" constant="22" id="CEn-aW-y2E"/>
+                                    <constraint firstAttribute="trailing" secondItem="j65-yv-88f" secondAttribute="trailing" constant="22" id="EvN-YW-R98"/>
+                                    <constraint firstItem="3zw-zj-V9y" firstAttribute="top" secondItem="cDu-EV-vOh" secondAttribute="bottom" constant="21" id="GjF-ye-lhw"/>
+                                    <constraint firstItem="UTf-Dd-XzI" firstAttribute="leading" secondItem="W95-8t-6F3" secondAttribute="leading" constant="22" id="Hch-0D-5X8"/>
+                                    <constraint firstAttribute="trailing" secondItem="OC9-14-lCo" secondAttribute="trailing" constant="22" id="JQz-85-ADS"/>
+                                    <constraint firstItem="a3B-pw-zUB" firstAttribute="leading" secondItem="W95-8t-6F3" secondAttribute="leading" constant="22" id="KQt-hy-S1q"/>
+                                    <constraint firstItem="3zw-zj-V9y" firstAttribute="leading" secondItem="W95-8t-6F3" secondAttribute="leading" constant="22" id="KpB-0t-ydE"/>
+                                    <constraint firstItem="4lA-dc-WXG" firstAttribute="top" secondItem="BPG-wn-ANh" secondAttribute="bottom" constant="5" id="Lbr-Uj-Yra"/>
+                                    <constraint firstAttribute="trailing" secondItem="UTf-Dd-XzI" secondAttribute="trailing" constant="22" id="LtS-2N-i7P"/>
+                                    <constraint firstItem="j65-yv-88f" firstAttribute="top" secondItem="iHv-W2-fIH" secondAttribute="bottom" constant="21" id="NqT-YI-tNy"/>
+                                    <constraint firstAttribute="trailing" secondItem="Mha-kp-Nk1" secondAttribute="trailing" constant="22" id="Olw-Cl-IBO"/>
+                                    <constraint firstItem="A19-Mv-KzY" firstAttribute="centerX" secondItem="W95-8t-6F3" secondAttribute="centerX" id="PVd-Dm-q6q"/>
+                                    <constraint firstItem="BPG-wn-ANh" firstAttribute="top" secondItem="W95-8t-6F3" secondAttribute="top" constant="16" id="SDu-jM-E0u"/>
+                                    <constraint firstItem="4lA-dc-WXG" firstAttribute="leading" secondItem="W95-8t-6F3" secondAttribute="leading" constant="22" id="Syc-g9-6LU"/>
+                                    <constraint firstAttribute="trailing" secondItem="a3B-pw-zUB" secondAttribute="trailing" constant="22" id="T3g-ic-Abz"/>
+                                    <constraint firstItem="iML-CW-LMR" firstAttribute="top" secondItem="qN0-mU-r04" secondAttribute="bottom" constant="21" id="TOX-Iu-R0n"/>
+                                    <constraint firstItem="qN0-mU-r04" firstAttribute="top" secondItem="j65-yv-88f" secondAttribute="bottom" id="Ub3-Vl-KzF"/>
+                                    <constraint firstAttribute="trailing" secondItem="BPG-wn-ANh" secondAttribute="trailing" id="UxS-SI-tkb"/>
+                                    <constraint firstItem="BPG-wn-ANh" firstAttribute="leading" secondItem="W95-8t-6F3" secondAttribute="leading" id="b6P-6O-puP"/>
+                                    <constraint firstItem="j8n-WD-6c6" firstAttribute="leading" secondItem="W95-8t-6F3" secondAttribute="leading" constant="22" id="cMS-bY-pPI"/>
+                                    <constraint firstItem="OC9-14-lCo" firstAttribute="leading" secondItem="W95-8t-6F3" secondAttribute="leading" constant="22" id="cjs-At-JPJ"/>
+                                    <constraint firstItem="a3B-pw-zUB" firstAttribute="top" secondItem="iML-CW-LMR" secondAttribute="bottom" id="dt9-iP-eoe"/>
+                                    <constraint firstItem="qN0-mU-r04" firstAttribute="leading" secondItem="W95-8t-6F3" secondAttribute="leading" constant="22" id="gHH-Ae-pMY"/>
+                                    <constraint firstItem="Mha-kp-Nk1" firstAttribute="top" secondItem="j8n-WD-6c6" secondAttribute="bottom" constant="21" id="hFd-pH-Lsx"/>
+                                    <constraint firstAttribute="trailing" secondItem="4lA-dc-WXG" secondAttribute="trailing" constant="22" id="iEW-xb-o0b"/>
+                                    <constraint firstItem="cDu-EV-vOh" firstAttribute="leading" secondItem="W95-8t-6F3" secondAttribute="leading" constant="22" id="jZO-sd-8er"/>
+                                    <constraint firstAttribute="trailing" secondItem="qN0-mU-r04" secondAttribute="trailing" constant="22" id="nY7-zG-Kkv"/>
+                                    <constraint firstItem="Mha-kp-Nk1" firstAttribute="leading" secondItem="W95-8t-6F3" secondAttribute="leading" constant="22" id="r3D-eF-QYT"/>
+                                    <constraint firstItem="iML-CW-LMR" firstAttribute="leading" secondItem="W95-8t-6F3" secondAttribute="leading" constant="22" id="sga-xN-teD"/>
+                                    <constraint firstItem="j8n-WD-6c6" firstAttribute="top" secondItem="3zw-zj-V9y" secondAttribute="bottom" id="uW9-TF-MG3"/>
+                                    <constraint firstAttribute="trailing" secondItem="3zw-zj-V9y" secondAttribute="trailing" constant="22" id="v3O-RQ-kzJ"/>
+                                    <constraint firstItem="OC9-14-lCo" firstAttribute="top" secondItem="Mha-kp-Nk1" secondAttribute="bottom" id="z6u-LD-QKA"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm your transaction" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYw-xJ-CbC">
+                                <rect key="frame" x="8" y="52" width="398" height="23"/>
+                                <fontDescription key="fontDescription" name="TitilliumWeb-Regular" family="Titillium Web" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.92941176470588238" green="0.94509803921568625" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="a3B-pw-zUB" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="24:812" id="0V9-Zd-nsN"/>
+                            <constraint firstItem="j65-yv-88f" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="24:812" id="15z-MZ-w52"/>
+                            <constraint firstItem="PYw-xJ-CbC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="8" id="5MI-0i-ueS"/>
+                            <constraint firstItem="PYw-xJ-CbC" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="8" id="5Sq-25-IuB"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="W95-8t-6F3" secondAttribute="trailing" id="7yn-K0-SM0"/>
+                            <constraint firstItem="3zw-zj-V9y" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="24:812" id="ANj-pA-AYZ"/>
+                            <constraint firstItem="cDu-EV-vOh" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="24:812" id="AOq-cR-MzB"/>
+                            <constraint firstItem="j8n-WD-6c6" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="24:812" id="D9m-hw-kN0"/>
+                            <constraint firstItem="qN0-mU-r04" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="24:812" id="Gqb-Fh-HNp"/>
+                            <constraint firstItem="W95-8t-6F3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="NQw-7l-oxh"/>
+                            <constraint firstItem="UTf-Dd-XzI" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="24:812" id="TjL-8R-cML"/>
+                            <constraint firstItem="iML-CW-LMR" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="24:812" id="Xnr-yi-Wvc"/>
+                            <constraint firstItem="Mha-kp-Nk1" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="24:812" id="Ysk-d9-rVu"/>
+                            <constraint firstItem="A19-Mv-KzY" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="46:812" id="azI-yU-m8m"/>
+                            <constraint firstItem="W95-8t-6F3" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="563:812" id="eL4-JP-rYb"/>
+                            <constraint firstAttribute="bottom" secondItem="W95-8t-6F3" secondAttribute="bottom" id="u1M-tz-2uy"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="PYw-xJ-CbC" secondAttribute="trailing" constant="8" id="uVa-bm-R4Y"/>
+                            <constraint firstItem="OC9-14-lCo" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="24:812" id="xRQ-Rx-ghE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addressText" destination="4lA-dc-WXG" id="Onc-Ol-sWI"/>
+                        <outlet property="amountText" destination="qN0-mU-r04" id="cws-ES-Syz"/>
+                        <outlet property="amountUSDText" destination="a3B-pw-zUB" id="BQb-g8-tII"/>
+                        <outlet property="bottomView" destination="W95-8t-6F3" id="SYc-Y0-Hdn"/>
+                        <outlet property="confimButton" destination="A19-Mv-KzY" id="I2H-3X-xMf"/>
+                        <outlet property="feeText" destination="cDu-EV-vOh" id="QHp-Ys-GDi"/>
+                        <outlet property="totalAmountText" destination="j8n-WD-6c6" id="1jg-ug-Q0d"/>
+                        <outlet property="totalAmountUSDText" destination="OC9-14-lCo" id="fXf-c3-7Db"/>
+                        <outletCollection property="resizeText" destination="BPG-wn-ANh" collectionClass="NSMutableArray" id="aFB-Iu-fBT"/>
+                        <outletCollection property="resizeText" destination="4lA-dc-WXG" collectionClass="NSMutableArray" id="o9f-cv-0v4"/>
+                        <outletCollection property="resizeText" destination="j65-yv-88f" collectionClass="NSMutableArray" id="yFg-MA-nIg"/>
+                        <outletCollection property="resizeText" destination="qN0-mU-r04" collectionClass="NSMutableArray" id="EV2-wP-XYt"/>
+                        <outletCollection property="resizeText" destination="iML-CW-LMR" collectionClass="NSMutableArray" id="gWr-Gz-SFB"/>
+                        <outletCollection property="resizeText" destination="a3B-pw-zUB" collectionClass="NSMutableArray" id="d8k-uw-tWX"/>
+                        <outletCollection property="resizeText" destination="UTf-Dd-XzI" collectionClass="NSMutableArray" id="B91-Ju-jrP"/>
+                        <outletCollection property="resizeText" destination="cDu-EV-vOh" collectionClass="NSMutableArray" id="U7z-Qx-nGV"/>
+                        <outletCollection property="resizeText" destination="3zw-zj-V9y" collectionClass="NSMutableArray" id="YCz-Ws-i6o"/>
+                        <outletCollection property="resizeText" destination="j8n-WD-6c6" collectionClass="NSMutableArray" id="vHq-Qv-eZa"/>
+                        <outletCollection property="resizeText" destination="Mha-kp-Nk1" collectionClass="NSMutableArray" id="v83-Hw-ZH3"/>
+                        <outletCollection property="resizeText" destination="OC9-14-lCo" collectionClass="NSMutableArray" id="W8U-Wf-CFX"/>
+                        <outletCollection property="heightConstants" destination="SDu-jM-E0u" collectionClass="NSMutableArray" id="yKz-O1-uFA"/>
+                        <outletCollection property="heightConstants" destination="Lbr-Uj-Yra" collectionClass="NSMutableArray" id="TpZ-NP-u8t"/>
+                        <outletCollection property="heightConstants" destination="6FL-CN-ND6" collectionClass="NSMutableArray" id="7dH-r4-cu8"/>
+                        <outletCollection property="heightConstants" destination="NqT-YI-tNy" collectionClass="NSMutableArray" id="h9R-lF-3lb"/>
+                        <outletCollection property="heightConstants" destination="TOX-Iu-R0n" collectionClass="NSMutableArray" id="zeu-85-LeH"/>
+                        <outletCollection property="heightConstants" destination="9Z0-QP-Pyb" collectionClass="NSMutableArray" id="I7L-lK-MfU"/>
+                        <outletCollection property="heightConstants" destination="GjF-ye-lhw" collectionClass="NSMutableArray" id="hsN-gA-7zy"/>
+                        <outletCollection property="heightConstants" destination="hFd-pH-Lsx" collectionClass="NSMutableArray" id="prz-SI-lel"/>
+                        <outletCollection property="heightConstants" destination="0Du-KT-rYU" collectionClass="NSMutableArray" id="3ku-kg-2Z1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-371.01449275362324" y="-104.46428571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TitilliumWeb-Regular.ttf">
+            <string>TitilliumWeb-Regular</string>
+        </array>
+        <array key="TitilliumWeb-SemiBold.ttf">
+            <string>TitilliumWeb-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Transaction Detail View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="TransactionDetailViewController" id="Y6W-OH-hqX" customClass="TransactionDetailViewController" customModule="Whollet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RxG-SP-RDw" userLabel="Bottom View">
+                                <rect key="frame" x="0.0" y="174.5" width="375" height="1025.5"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mG1-S9-FLG">
+                                        <rect key="frame" x="0.0" y="30" width="375" height="995.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3SD-d0-4AH" userLabel="Content View">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="788"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pending send" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bog-80-nxx">
+                                                        <rect key="frame" x="0.0" y="46" width="375" height="29"/>
+                                                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="19"/>
+                                                        <color key="textColor" red="0.99215686274509807" green="0.70196078431372544" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="spk-2s-Dbz" userLabel="DateTime View">
+                                                        <rect key="frame" x="32" y="99" width="311" height="53"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNe-zy-kk1">
+                                                                <rect key="frame" x="155.5" y="0.0" width="155.5" height="23"/>
+                                                                <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="15"/>
+                                                                <color key="textColor" red="0.70980392160000005" green="0.73333333329999995" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7of-1d-wda" userLabel="Date View">
+                                                                <rect key="frame" x="0.0" y="0.0" width="155.5" height="53"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJ9-DY-EmM">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="155.5" height="23"/>
+                                                                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="15"/>
+                                                                        <color key="textColor" red="0.70980392156862748" green="0.73333333333333328" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aug 19, 2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6V-FC-MoL">
+                                                                        <rect key="frame" x="0.0" y="23" width="155.5" height="29"/>
+                                                                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="19"/>
+                                                                        <color key="textColor" red="0.050980392156862744" green="0.12156862745098039" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="trailing" secondItem="RJ9-DY-EmM" secondAttribute="trailing" id="MQm-ir-YlT"/>
+                                                                    <constraint firstItem="O6V-FC-MoL" firstAttribute="leading" secondItem="RJ9-DY-EmM" secondAttribute="leading" id="Z5q-hF-Ol5"/>
+                                                                    <constraint firstItem="RJ9-DY-EmM" firstAttribute="leading" secondItem="7of-1d-wda" secondAttribute="leading" id="aAA-ct-SRI"/>
+                                                                    <constraint firstItem="RJ9-DY-EmM" firstAttribute="top" secondItem="7of-1d-wda" secondAttribute="top" id="d0J-8o-H0h"/>
+                                                                    <constraint firstItem="O6V-FC-MoL" firstAttribute="top" secondItem="RJ9-DY-EmM" secondAttribute="bottom" id="sOV-jP-dRX"/>
+                                                                    <constraint firstItem="O6V-FC-MoL" firstAttribute="trailing" secondItem="RJ9-DY-EmM" secondAttribute="trailing" id="wcD-95-wZy"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:28 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1B-FB-cBL">
+                                                                <rect key="frame" x="155.5" y="23" width="155.5" height="29"/>
+                                                                <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="19"/>
+                                                                <color key="textColor" red="0.050980392156862744" green="0.12156862745098039" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="7of-1d-wda" firstAttribute="leading" secondItem="spk-2s-Dbz" secondAttribute="leading" id="AXL-W9-K51"/>
+                                                            <constraint firstItem="7of-1d-wda" firstAttribute="top" secondItem="spk-2s-Dbz" secondAttribute="top" id="Ahl-4t-Wsa"/>
+                                                            <constraint firstItem="a1B-FB-cBL" firstAttribute="leading" secondItem="aNe-zy-kk1" secondAttribute="leading" id="AnJ-Vb-gZu"/>
+                                                            <constraint firstItem="aNe-zy-kk1" firstAttribute="leading" secondItem="7of-1d-wda" secondAttribute="trailing" id="CMO-P1-Fi5"/>
+                                                            <constraint firstItem="a1B-FB-cBL" firstAttribute="trailing" secondItem="aNe-zy-kk1" secondAttribute="trailing" id="QQV-KJ-Uqs"/>
+                                                            <constraint firstItem="a1B-FB-cBL" firstAttribute="top" secondItem="aNe-zy-kk1" secondAttribute="bottom" id="Qvf-c0-JCl"/>
+                                                            <constraint firstItem="7of-1d-wda" firstAttribute="width" secondItem="spk-2s-Dbz" secondAttribute="width" multiplier="0.5" id="W5P-IA-hjn"/>
+                                                            <constraint firstAttribute="trailing" secondItem="aNe-zy-kk1" secondAttribute="trailing" id="coP-tQ-UcR"/>
+                                                            <constraint firstAttribute="bottom" secondItem="7of-1d-wda" secondAttribute="bottom" id="hxt-8W-TAI"/>
+                                                            <constraint firstAttribute="height" constant="53" id="nIA-CJ-yZy"/>
+                                                            <constraint firstItem="aNe-zy-kk1" firstAttribute="top" secondItem="spk-2s-Dbz" secondAttribute="top" id="ui6-zf-luA"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bv7-qu-cYB" userLabel="Line View">
+                                                        <rect key="frame" x="32" y="166.5" width="311" height="1"/>
+                                                        <color key="backgroundColor" red="0.81176470588235294" green="0.82352941176470584" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="BY7-Cj-ofe"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Puf-Qg-Tl1">
+                                                        <rect key="frame" x="32" y="186" width="311" height="23"/>
+                                                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="15"/>
+                                                        <color key="textColor" red="0.70980392156862748" green="0.73333333333333328" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total amount input" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g57-u9-4dm">
+                                                        <rect key="frame" x="32" y="209" width="311" height="29"/>
+                                                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="19"/>
+                                                        <color key="textColor" red="0.050980392159999999" green="0.1215686275" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total amount ($)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UX7-yB-Ixo">
+                                                        <rect key="frame" x="32" y="254" width="311" height="23"/>
+                                                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="15"/>
+                                                        <color key="textColor" red="0.70980392160000005" green="0.73333333329999995" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total amount usd input" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NvB-4p-RQQ">
+                                                        <rect key="frame" x="32" y="277" width="311" height="29"/>
+                                                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="19"/>
+                                                        <color key="textColor" red="0.050980392159999999" green="0.1215686275" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send fee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZY-Oe-arG">
+                                                        <rect key="frame" x="32" y="322" width="311" height="23"/>
+                                                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="15"/>
+                                                        <color key="textColor" red="0.70980392160000005" green="0.73333333329999995" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0,0015 ICX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEu-O1-8vT">
+                                                        <rect key="frame" x="32" y="345" width="311" height="29"/>
+                                                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="19"/>
+                                                        <color key="textColor" red="0.050980392159999999" green="0.1215686275" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLD-lk-fkg">
+                                                        <rect key="frame" x="32" y="390" width="311" height="23"/>
+                                                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="15"/>
+                                                        <color key="textColor" red="0.70980392160000005" green="0.73333333329999995" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status input" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBP-Eg-p9c">
+                                                        <rect key="frame" x="32" y="413" width="311" height="29"/>
+                                                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="19"/>
+                                                        <color key="textColor" red="0.20392156859999999" green="0.47843137250000001" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mhn-cK-SSP" userLabel="Line View">
+                                                        <rect key="frame" x="32" y="460" width="311" height="1"/>
+                                                        <color key="backgroundColor" red="0.81176470590000005" green="0.82352941180000006" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="eSU-Mj-8Bu"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transaction ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGA-Us-mOl">
+                                                        <rect key="frame" x="32" y="479" width="311" height="23"/>
+                                                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="15"/>
+                                                        <color key="textColor" red="0.70980392160000005" green="0.73333333329999995" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="transaction id input" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tv5-eG-jHc">
+                                                        <rect key="frame" x="32" y="502" width="311" height="29"/>
+                                                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="19"/>
+                                                        <color key="textColor" red="0.050980392159999999" green="0.1215686275" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9N-MW-UkB">
+                                                        <rect key="frame" x="32" y="547" width="311" height="23"/>
+                                                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="15"/>
+                                                        <color key="textColor" red="0.70980392160000005" green="0.73333333329999995" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to input" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j03-ec-ytN">
+                                                        <rect key="frame" x="32" y="570" width="311" height="29"/>
+                                                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="19"/>
+                                                        <color key="textColor" red="0.050980392159999999" green="0.1215686275" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X85-Gr-ZXz">
+                                                        <rect key="frame" x="32" y="615" width="311" height="23"/>
+                                                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="15"/>
+                                                        <color key="textColor" red="0.70980392160000005" green="0.73333333329999995" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="from input" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40o-XI-vRZ">
+                                                        <rect key="frame" x="32" y="638" width="311" height="29"/>
+                                                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="19"/>
+                                                        <color key="textColor" red="0.050980392159999999" green="0.1215686275" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enx-ss-jm2" userLabel="Back To Wallet">
+                                                        <rect key="frame" x="87.5" y="712" width="200" height="46"/>
+                                                        <color key="backgroundColor" red="0.20392156859999999" green="0.47843137250000001" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="enx-ss-jm2" secondAttribute="height" multiplier="200:46" id="bwF-wc-YUl"/>
+                                                            <constraint firstAttribute="height" constant="46" id="kAQ-gb-HuQ"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="TitilliumWeb-Regular" family="Titillium Web" pointSize="19"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Back To Home">
+                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="backToHomeOnClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="9Wq-uX-3Z1"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Mhn-cK-SSP" firstAttribute="leading" secondItem="Bv7-qu-cYB" secondAttribute="leading" id="18d-Cr-urD"/>
+                                                    <constraint firstItem="LLD-lk-fkg" firstAttribute="top" secondItem="UEu-O1-8vT" secondAttribute="bottom" constant="16" id="2JU-Kp-L8h"/>
+                                                    <constraint firstItem="Puf-Qg-Tl1" firstAttribute="top" secondItem="Bv7-qu-cYB" secondAttribute="bottom" constant="18.75" id="4Vg-i6-gdZ"/>
+                                                    <constraint firstItem="xZY-Oe-arG" firstAttribute="trailing" secondItem="Bv7-qu-cYB" secondAttribute="trailing" id="6mQ-C5-cO2"/>
+                                                    <constraint firstItem="Puf-Qg-Tl1" firstAttribute="leading" secondItem="Bv7-qu-cYB" secondAttribute="leading" id="9A7-RU-Emu"/>
+                                                    <constraint firstItem="NvB-4p-RQQ" firstAttribute="trailing" secondItem="UX7-yB-Ixo" secondAttribute="trailing" id="9rD-ic-gz5"/>
+                                                    <constraint firstAttribute="trailing" secondItem="spk-2s-Dbz" secondAttribute="trailing" constant="32" id="9rJ-3K-N5F"/>
+                                                    <constraint firstItem="Mhn-cK-SSP" firstAttribute="trailing" secondItem="Bv7-qu-cYB" secondAttribute="trailing" id="A4G-De-GEe"/>
+                                                    <constraint firstAttribute="bottom" secondItem="enx-ss-jm2" secondAttribute="bottom" constant="30" id="AgQ-DD-ofw"/>
+                                                    <constraint firstItem="Bog-80-nxx" firstAttribute="leading" secondItem="3SD-d0-4AH" secondAttribute="leading" id="Agt-3U-S3P"/>
+                                                    <constraint firstItem="lBP-Eg-p9c" firstAttribute="leading" secondItem="LLD-lk-fkg" secondAttribute="leading" id="BPx-no-Ood"/>
+                                                    <constraint firstItem="bGA-Us-mOl" firstAttribute="leading" secondItem="Mhn-cK-SSP" secondAttribute="leading" id="Dwq-Zz-oKb"/>
+                                                    <constraint firstItem="g57-u9-4dm" firstAttribute="leading" secondItem="Puf-Qg-Tl1" secondAttribute="leading" id="E6h-QE-URz"/>
+                                                    <constraint firstItem="40o-XI-vRZ" firstAttribute="leading" secondItem="X85-Gr-ZXz" secondAttribute="leading" id="ENp-Ab-c4C"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Bog-80-nxx" secondAttribute="trailing" id="Fr4-6Q-CHP"/>
+                                                    <constraint firstItem="Tv5-eG-jHc" firstAttribute="trailing" secondItem="Mhn-cK-SSP" secondAttribute="trailing" id="GdC-Lp-s6H"/>
+                                                    <constraint firstItem="j03-ec-ytN" firstAttribute="trailing" secondItem="L9N-MW-UkB" secondAttribute="trailing" id="HCb-vw-oAp"/>
+                                                    <constraint firstItem="NvB-4p-RQQ" firstAttribute="top" secondItem="UX7-yB-Ixo" secondAttribute="bottom" id="Jps-Ql-KDt"/>
+                                                    <constraint firstItem="X85-Gr-ZXz" firstAttribute="leading" secondItem="Mhn-cK-SSP" secondAttribute="leading" id="L3D-Kb-hOo"/>
+                                                    <constraint firstItem="Tv5-eG-jHc" firstAttribute="leading" secondItem="Mhn-cK-SSP" secondAttribute="leading" id="LCR-dJ-9b1"/>
+                                                    <constraint firstItem="NvB-4p-RQQ" firstAttribute="leading" secondItem="UX7-yB-Ixo" secondAttribute="leading" id="LLE-Uf-xni"/>
+                                                    <constraint firstItem="bGA-Us-mOl" firstAttribute="top" secondItem="Mhn-cK-SSP" secondAttribute="bottom" constant="18" id="Moh-IF-9RL"/>
+                                                    <constraint firstItem="xZY-Oe-arG" firstAttribute="leading" secondItem="Bv7-qu-cYB" secondAttribute="leading" id="MuC-IR-BvR"/>
+                                                    <constraint firstItem="NvB-4p-RQQ" firstAttribute="trailing" secondItem="Bv7-qu-cYB" secondAttribute="trailing" id="NYa-pj-5VA"/>
+                                                    <constraint firstItem="Mhn-cK-SSP" firstAttribute="top" secondItem="lBP-Eg-p9c" secondAttribute="bottom" constant="18" id="Odc-8r-3hk"/>
+                                                    <constraint firstItem="UEu-O1-8vT" firstAttribute="top" secondItem="xZY-Oe-arG" secondAttribute="bottom" id="OtL-AY-Ilv"/>
+                                                    <constraint firstItem="xZY-Oe-arG" firstAttribute="top" secondItem="NvB-4p-RQQ" secondAttribute="bottom" constant="16" id="Pvv-xy-TLr"/>
+                                                    <constraint firstItem="lBP-Eg-p9c" firstAttribute="top" secondItem="LLD-lk-fkg" secondAttribute="bottom" id="QOS-9i-aRf"/>
+                                                    <constraint firstItem="Bv7-qu-cYB" firstAttribute="leading" secondItem="spk-2s-Dbz" secondAttribute="leading" id="QSk-bR-UC7"/>
+                                                    <constraint firstItem="LLD-lk-fkg" firstAttribute="leading" secondItem="Bv7-qu-cYB" secondAttribute="leading" id="Rpf-Vk-iq2"/>
+                                                    <constraint firstItem="LLD-lk-fkg" firstAttribute="trailing" secondItem="Bv7-qu-cYB" secondAttribute="trailing" id="TrO-EW-stJ"/>
+                                                    <constraint firstItem="L9N-MW-UkB" firstAttribute="top" secondItem="Tv5-eG-jHc" secondAttribute="bottom" constant="16" id="Wbv-Nj-P7s"/>
+                                                    <constraint firstItem="Tv5-eG-jHc" firstAttribute="top" secondItem="bGA-Us-mOl" secondAttribute="bottom" id="Xl0-F6-zre"/>
+                                                    <constraint firstItem="UX7-yB-Ixo" firstAttribute="top" secondItem="g57-u9-4dm" secondAttribute="bottom" constant="16" id="Zub-zT-2ij"/>
+                                                    <constraint firstItem="j03-ec-ytN" firstAttribute="leading" secondItem="L9N-MW-UkB" secondAttribute="leading" id="ZzZ-xJ-yxH"/>
+                                                    <constraint firstItem="enx-ss-jm2" firstAttribute="centerX" secondItem="3SD-d0-4AH" secondAttribute="centerX" id="aeH-SL-8bI"/>
+                                                    <constraint firstItem="j03-ec-ytN" firstAttribute="trailing" secondItem="Mhn-cK-SSP" secondAttribute="trailing" id="bbR-eg-FEO"/>
+                                                    <constraint firstItem="spk-2s-Dbz" firstAttribute="leading" secondItem="3SD-d0-4AH" secondAttribute="leading" constant="32" id="bcq-og-i1t"/>
+                                                    <constraint firstItem="40o-XI-vRZ" firstAttribute="trailing" secondItem="Mhn-cK-SSP" secondAttribute="trailing" id="hV3-El-Pjr"/>
+                                                    <constraint firstItem="Bv7-qu-cYB" firstAttribute="top" secondItem="spk-2s-Dbz" secondAttribute="bottom" constant="14.25" id="ipB-DZ-z9R"/>
+                                                    <constraint firstItem="40o-XI-vRZ" firstAttribute="trailing" secondItem="X85-Gr-ZXz" secondAttribute="trailing" id="kaK-bd-bVZ"/>
+                                                    <constraint firstItem="L9N-MW-UkB" firstAttribute="leading" secondItem="Mhn-cK-SSP" secondAttribute="leading" id="l8K-Ed-2V2"/>
+                                                    <constraint firstItem="Puf-Qg-Tl1" firstAttribute="trailing" secondItem="Bv7-qu-cYB" secondAttribute="trailing" id="lf3-QJ-Dlc"/>
+                                                    <constraint firstItem="enx-ss-jm2" firstAttribute="top" secondItem="40o-XI-vRZ" secondAttribute="bottom" constant="45" id="lqS-BM-Sqh"/>
+                                                    <constraint firstItem="lBP-Eg-p9c" firstAttribute="trailing" secondItem="LLD-lk-fkg" secondAttribute="trailing" id="mPG-55-KdJ"/>
+                                                    <constraint firstItem="UEu-O1-8vT" firstAttribute="leading" secondItem="xZY-Oe-arG" secondAttribute="leading" id="mq9-ve-1sm"/>
+                                                    <constraint firstItem="Bv7-qu-cYB" firstAttribute="trailing" secondItem="spk-2s-Dbz" secondAttribute="trailing" id="nS5-1N-GeH"/>
+                                                    <constraint firstItem="UEu-O1-8vT" firstAttribute="trailing" secondItem="xZY-Oe-arG" secondAttribute="trailing" id="qn0-yb-dto"/>
+                                                    <constraint firstItem="j03-ec-ytN" firstAttribute="top" secondItem="L9N-MW-UkB" secondAttribute="bottom" id="saL-c0-Jhh"/>
+                                                    <constraint firstItem="g57-u9-4dm" firstAttribute="trailing" secondItem="Puf-Qg-Tl1" secondAttribute="trailing" id="su2-D2-b6i"/>
+                                                    <constraint firstItem="Bog-80-nxx" firstAttribute="top" secondItem="3SD-d0-4AH" secondAttribute="top" constant="46" id="swg-bY-6ja"/>
+                                                    <constraint firstItem="bGA-Us-mOl" firstAttribute="trailing" secondItem="Mhn-cK-SSP" secondAttribute="trailing" id="uBZ-ia-59d"/>
+                                                    <constraint firstItem="g57-u9-4dm" firstAttribute="top" secondItem="Puf-Qg-Tl1" secondAttribute="bottom" id="vqG-MJ-Tag"/>
+                                                    <constraint firstItem="UX7-yB-Ixo" firstAttribute="leading" secondItem="Bv7-qu-cYB" secondAttribute="leading" id="wnd-A7-fEf"/>
+                                                    <constraint firstItem="spk-2s-Dbz" firstAttribute="top" secondItem="Bog-80-nxx" secondAttribute="bottom" constant="24" id="xJ3-0q-SuT"/>
+                                                    <constraint firstItem="40o-XI-vRZ" firstAttribute="top" secondItem="X85-Gr-ZXz" secondAttribute="bottom" id="xb0-WL-HWo"/>
+                                                    <constraint firstItem="X85-Gr-ZXz" firstAttribute="top" secondItem="j03-ec-ytN" secondAttribute="bottom" constant="16" id="znN-sE-aS6"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="3SD-d0-4AH" firstAttribute="leading" secondItem="mG1-S9-FLG" secondAttribute="leading" id="D4R-jz-npM"/>
+                                            <constraint firstItem="3SD-d0-4AH" firstAttribute="top" secondItem="mG1-S9-FLG" secondAttribute="top" id="FMm-ZJ-VWN"/>
+                                            <constraint firstAttribute="trailing" secondItem="3SD-d0-4AH" secondAttribute="trailing" id="aOu-67-gLg"/>
+                                            <constraint firstAttribute="bottom" secondItem="3SD-d0-4AH" secondAttribute="bottom" id="q9d-EF-ZTw"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="Lfi-dt-ah2"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="2fe-db-bS0"/>
+                                    </scrollView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pending" translatesAutoresizingMaskIntoConstraints="NO" id="uQg-Wl-bmc">
+                                        <rect key="frame" x="157.5" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="1Z4-GA-mly"/>
+                                            <constraint firstAttribute="height" constant="60" id="bKd-bp-QfC"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="uQg-Wl-bmc" firstAttribute="top" secondItem="RxG-SP-RDw" secondAttribute="top" id="3Og-jP-rda"/>
+                                    <constraint firstAttribute="bottom" secondItem="mG1-S9-FLG" secondAttribute="bottom" id="82j-lh-Rgd"/>
+                                    <constraint firstItem="mG1-S9-FLG" firstAttribute="leading" secondItem="RxG-SP-RDw" secondAttribute="leading" id="9hE-5d-vau"/>
+                                    <constraint firstItem="mG1-S9-FLG" firstAttribute="top" secondItem="uQg-Wl-bmc" secondAttribute="bottom" constant="-30" id="dHC-zI-Rbk"/>
+                                    <constraint firstAttribute="trailing" secondItem="mG1-S9-FLG" secondAttribute="trailing" id="eyg-FP-6H4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.92941176470588238" green="0.94509803921568625" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="uQg-Wl-bmc" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="Fhe-gB-nQ0"/>
+                            <constraint firstItem="3SD-d0-4AH" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="GO6-Yw-dUy"/>
+                            <constraint firstItem="RxG-SP-RDw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="IUk-qY-AVL"/>
+                            <constraint firstItem="RxG-SP-RDw" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="126.5" id="N5H-Ob-qb5"/>
+                            <constraint firstAttribute="bottom" secondItem="RxG-SP-RDw" secondAttribute="bottom" id="Z2P-Ou-Stk"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="RxG-SP-RDw" secondAttribute="trailing" id="mQB-jE-gVm"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="375" height="1200"/>
+                    <connections>
+                        <outlet property="backToWalletButton" destination="enx-ss-jm2" id="s4u-qn-r0n"/>
+                        <outlet property="dateText" destination="O6V-FC-MoL" id="N5w-Zp-awp"/>
+                        <outlet property="fromText" destination="40o-XI-vRZ" id="CDc-Ed-naf"/>
+                        <outlet property="scrollContentView" destination="3SD-d0-4AH" id="UE6-Um-N5h"/>
+                        <outlet property="scrollView" destination="mG1-S9-FLG" id="OdO-VW-ttK"/>
+                        <outlet property="sendFeeText" destination="UEu-O1-8vT" id="mQQ-LD-WBV"/>
+                        <outlet property="statusHeader" destination="Bog-80-nxx" id="YNx-eT-4q2"/>
+                        <outlet property="statusImage" destination="uQg-Wl-bmc" id="z22-3d-zKH"/>
+                        <outlet property="statusText" destination="lBP-Eg-p9c" id="hBA-iA-mB1"/>
+                        <outlet property="timeText" destination="a1B-FB-cBL" id="aoI-Gt-rRx"/>
+                        <outlet property="toText" destination="j03-ec-ytN" id="9Um-0h-emC"/>
+                        <outlet property="totalAmountText" destination="g57-u9-4dm" id="J6N-iW-Bua"/>
+                        <outlet property="totalAmountUSDText" destination="NvB-4p-RQQ" id="vZN-HR-qKg"/>
+                        <outlet property="transactionText" destination="Tv5-eG-jHc" id="IF2-3z-Yp9"/>
+                        <outletCollection property="heightConstants" destination="N5H-Ob-qb5" collectionClass="NSMutableArray" id="9sN-YK-UAU"/>
+                        <outletCollection property="heightConstants" destination="xJ3-0q-SuT" collectionClass="NSMutableArray" id="tVd-qG-bAW"/>
+                        <outletCollection property="heightConstants" destination="ipB-DZ-z9R" collectionClass="NSMutableArray" id="muR-EF-zLs"/>
+                        <outletCollection property="heightConstants" destination="4Vg-i6-gdZ" collectionClass="NSMutableArray" id="htK-Tg-IM8"/>
+                        <outletCollection property="heightConstants" destination="Zub-zT-2ij" collectionClass="NSMutableArray" id="fuU-Th-VwE"/>
+                        <outletCollection property="heightConstants" destination="Pvv-xy-TLr" collectionClass="NSMutableArray" id="bMz-d7-c4e"/>
+                        <outletCollection property="heightConstants" destination="2JU-Kp-L8h" collectionClass="NSMutableArray" id="u67-15-uVQ"/>
+                        <outletCollection property="heightConstants" destination="Odc-8r-3hk" collectionClass="NSMutableArray" id="f89-2N-dLv"/>
+                        <outletCollection property="heightConstants" destination="Moh-IF-9RL" collectionClass="NSMutableArray" id="eQk-UU-rmw"/>
+                        <outletCollection property="heightConstants" destination="Wbv-Nj-P7s" collectionClass="NSMutableArray" id="KWp-Rn-i5N"/>
+                        <outletCollection property="heightConstants" destination="znN-sE-aS6" collectionClass="NSMutableArray" id="hBZ-iL-xrc"/>
+                        <outletCollection property="heightConstants" destination="lqS-BM-Sqh" collectionClass="NSMutableArray" id="Xvb-ZH-z9d"/>
+                        <outletCollection property="resizeTexts" destination="Bog-80-nxx" collectionClass="NSMutableArray" id="KHo-2P-7PF"/>
+                        <outletCollection property="resizeTexts" destination="RJ9-DY-EmM" collectionClass="NSMutableArray" id="eup-DG-2LX"/>
+                        <outletCollection property="resizeTexts" destination="O6V-FC-MoL" collectionClass="NSMutableArray" id="PSj-L9-rl5"/>
+                        <outletCollection property="resizeTexts" destination="Puf-Qg-Tl1" collectionClass="NSMutableArray" id="gzV-ma-0ct"/>
+                        <outletCollection property="resizeTexts" destination="g57-u9-4dm" collectionClass="NSMutableArray" id="Ra7-be-SHT"/>
+                        <outletCollection property="resizeTexts" destination="UX7-yB-Ixo" collectionClass="NSMutableArray" id="NiT-SF-1XE"/>
+                        <outletCollection property="resizeTexts" destination="NvB-4p-RQQ" collectionClass="NSMutableArray" id="YXz-el-HVa"/>
+                        <outletCollection property="resizeTexts" destination="xZY-Oe-arG" collectionClass="NSMutableArray" id="Ztc-y3-qu8"/>
+                        <outletCollection property="resizeTexts" destination="aNe-zy-kk1" collectionClass="NSMutableArray" id="jWp-kf-mFE"/>
+                        <outletCollection property="resizeTexts" destination="a1B-FB-cBL" collectionClass="NSMutableArray" id="CxF-Ku-Kdj"/>
+                        <outletCollection property="resizeTexts" destination="UEu-O1-8vT" collectionClass="NSMutableArray" id="eMu-sJ-ylv"/>
+                        <outletCollection property="resizeTexts" destination="LLD-lk-fkg" collectionClass="NSMutableArray" id="O5U-mR-7rK"/>
+                        <outletCollection property="resizeTexts" destination="lBP-Eg-p9c" collectionClass="NSMutableArray" id="DXJ-E5-fCO"/>
+                        <outletCollection property="resizeTexts" destination="bGA-Us-mOl" collectionClass="NSMutableArray" id="cJJ-7y-JJE"/>
+                        <outletCollection property="resizeTexts" destination="Tv5-eG-jHc" collectionClass="NSMutableArray" id="d0w-Vn-IYc"/>
+                        <outletCollection property="resizeTexts" destination="L9N-MW-UkB" collectionClass="NSMutableArray" id="VFh-ny-dji"/>
+                        <outletCollection property="resizeTexts" destination="j03-ec-ytN" collectionClass="NSMutableArray" id="Dsh-4A-Knk"/>
+                        <outletCollection property="resizeTexts" destination="X85-Gr-ZXz" collectionClass="NSMutableArray" id="ZT1-YL-mwu"/>
+                        <outletCollection property="resizeTexts" destination="40o-XI-vRZ" collectionClass="NSMutableArray" id="v0q-wn-g7T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="123.91304347826087" y="-34.821428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pending" width="64" height="62"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

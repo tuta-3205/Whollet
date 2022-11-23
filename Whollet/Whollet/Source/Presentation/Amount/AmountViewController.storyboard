@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TitilliumWeb-Light.ttf">
+            <string>TitilliumWeb-Light</string>
+        </array>
+        <array key="TitilliumWeb-Regular.ttf">
+            <string>TitilliumWeb-Regular</string>
+        </array>
+        <array key="TitilliumWeb-SemiBold.ttf">
+            <string>TitilliumWeb-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Amount View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="AmountViewController" id="Y6W-OH-hqX" customClass="AmountViewController" customModule="Whollet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="chc-OS-egi" userLabel="Keyboard">
+                                <rect key="frame" x="0.0" y="503.66666666666674" width="430" height="394.33333333333326"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4DP-wS-weR">
+                                        <rect key="frame" x="165.66666666666666" y="0.0" width="98.666666666666657" height="98.666666666666671"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="4DP-wS-weR" secondAttribute="height" multiplier="1:1" id="Qk2-55-lXs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="TitilliumWeb-Light" family="Titillium Web" pointSize="38"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="2"/>
+                                        <connections>
+                                            <action selector="towButtonOnClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="RlN-NM-eel"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lh-7t-poU">
+                                        <rect key="frame" x="165.66666666666666" y="98.666666666666686" width="98.666666666666657" height="98.666666666666686"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="5lh-7t-poU" secondAttribute="height" multiplier="1:1" id="BhR-4U-xnc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="TitilliumWeb-Light" family="Titillium Web" pointSize="38"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="5"/>
+                                        <connections>
+                                            <action selector="fiveButtonOnClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="mFW-oR-SyV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nmj-oj-FQt" userLabel="8">
+                                        <rect key="frame" x="165.66666666666666" y="197.33333333333331" width="98.666666666666657" height="98.333333333333314"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Nmj-oj-FQt" secondAttribute="height" multiplier="1:1" id="5Ro-cv-Pgp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="TitilliumWeb-Light" family="Titillium Web" pointSize="38"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="8"/>
+                                        <connections>
+                                            <action selector="eightButtonOnClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="hic-NS-QAA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPm-Th-bXK">
+                                        <rect key="frame" x="165.66666666666666" y="295.66666666666669" width="98.666666666666657" height="98.666666666666686"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="BPm-Th-bXK" secondAttribute="height" multiplier="1:1" id="U0J-af-Mkh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="TitilliumWeb-Light" family="Titillium Web" pointSize="38"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="0"/>
+                                        <connections>
+                                            <action selector="zeroButtonOnClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="igU-8s-r0c"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="21x-uW-MdV" userLabel="3 View">
+                                        <rect key="frame" x="264.33333333333331" y="0.0" width="165.66666666666669" height="98.666666666666671"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98t-t1-IGi">
+                                                <rect key="frame" x="33.666666666666679" y="0.0" width="98.333333333333314" height="98.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="98t-t1-IGi" secondAttribute="height" multiplier="1:1" id="n5I-1N-FDU"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TitilliumWeb-Light" family="Titillium Web" pointSize="38"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="3"/>
+                                                <connections>
+                                                    <action selector="threeButtonOnClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Aft-cL-Wnb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="98t-t1-IGi" secondAttribute="bottom" id="Afl-Yz-Iux"/>
+                                            <constraint firstItem="98t-t1-IGi" firstAttribute="top" secondItem="21x-uW-MdV" secondAttribute="top" id="Hko-uA-RX0"/>
+                                            <constraint firstItem="98t-t1-IGi" firstAttribute="centerX" secondItem="21x-uW-MdV" secondAttribute="centerX" id="lf8-M6-ayt"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZMM-TN-Nkt" userLabel="6 View">
+                                        <rect key="frame" x="264.33333333333331" y="98.666666666666686" width="165.66666666666669" height="98.666666666666686"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9u-wD-Jsj">
+                                                <rect key="frame" x="33.666666666666679" y="0.0" width="98.333333333333314" height="98.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="s9u-wD-Jsj" secondAttribute="height" multiplier="1:1" id="cuA-Ed-9zK"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TitilliumWeb-Light" family="Titillium Web" pointSize="38"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="6"/>
+                                                <connections>
+                                                    <action selector="sixButtonOnClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="3bt-dN-zvQ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="s9u-wD-Jsj" firstAttribute="centerX" secondItem="ZMM-TN-Nkt" secondAttribute="centerX" id="gSN-yp-F59"/>
+                                            <constraint firstAttribute="bottom" secondItem="s9u-wD-Jsj" secondAttribute="bottom" id="mwe-iQ-2Xv"/>
+                                            <constraint firstItem="s9u-wD-Jsj" firstAttribute="top" secondItem="ZMM-TN-Nkt" secondAttribute="top" id="o0f-CU-cxh"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WHf-Fj-bTC" userLabel="9 View">
+                                        <rect key="frame" x="264.33333333333331" y="197.33333333333331" width="165.66666666666669" height="98.333333333333314"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5G-Qr-PBx" userLabel="9">
+                                                <rect key="frame" x="33.666666666666679" y="0.0" width="98.333333333333314" height="98.333333333333329"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="X5G-Qr-PBx" secondAttribute="height" multiplier="1:1" id="uhc-hB-uo3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TitilliumWeb-Light" family="Titillium Web" pointSize="38"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="9"/>
+                                                <connections>
+                                                    <action selector="nineButtonOnClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="AOh-Mj-swz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="X5G-Qr-PBx" firstAttribute="top" secondItem="WHf-Fj-bTC" secondAttribute="top" id="46A-mg-iwX"/>
+                                            <constraint firstAttribute="bottom" secondItem="X5G-Qr-PBx" secondAttribute="bottom" id="gl3-cf-t21"/>
+                                            <constraint firstItem="X5G-Qr-PBx" firstAttribute="centerX" secondItem="WHf-Fj-bTC" secondAttribute="centerX" id="tSk-YS-ve3"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mes-SF-Ion" userLabel="back View">
+                                        <rect key="frame" x="264.33333333333331" y="295.66666666666669" width="165.66666666666669" height="98.666666666666686"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7e0-EE-BvY" userLabel="back">
+                                                <rect key="frame" x="33.666666666666679" y="0.0" width="98.333333333333314" height="98.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="7e0-EE-BvY" secondAttribute="height" multiplier="1:1" id="HNf-cg-EmS"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="back"/>
+                                                <connections>
+                                                    <action selector="backButtonOnClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="oJc-Cb-M0b"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="7e0-EE-BvY" firstAttribute="top" secondItem="Mes-SF-Ion" secondAttribute="top" id="Dg4-Pn-SqU"/>
+                                            <constraint firstItem="7e0-EE-BvY" firstAttribute="centerX" secondItem="Mes-SF-Ion" secondAttribute="centerX" id="JYD-6C-qAK"/>
+                                            <constraint firstAttribute="bottom" secondItem="7e0-EE-BvY" secondAttribute="bottom" id="Yqk-Wx-csz"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hND-uz-VCm" userLabel="4 View">
+                                        <rect key="frame" x="0.0" y="98.666666666666686" width="165.66666666666666" height="98.666666666666686"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nja-Tv-Iou">
+                                                <rect key="frame" x="33.666666666666664" y="0.0" width="98.333333333333343" height="98.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Nja-Tv-Iou" secondAttribute="height" multiplier="1:1" id="SFw-0g-Ok2"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TitilliumWeb-Light" family="Titillium Web" pointSize="38"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="4"/>
+                                                <connections>
+                                                    <action selector="fourButtonOnClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="H1N-JE-Y2H"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Nja-Tv-Iou" firstAttribute="centerX" secondItem="hND-uz-VCm" secondAttribute="centerX" id="QvV-26-N0A"/>
+                                            <constraint firstItem="Nja-Tv-Iou" firstAttribute="top" secondItem="hND-uz-VCm" secondAttribute="top" id="ZWF-Zf-ZKZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="Nja-Tv-Iou" secondAttribute="bottom" id="cBv-z9-KKi"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IbG-B8-iJx" userLabel="1 View">
+                                        <rect key="frame" x="0.0" y="0.0" width="165.66666666666666" height="98.666666666666671"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fN9-6Y-bzT">
+                                                <rect key="frame" x="33.666666666666664" y="0.0" width="98.333333333333343" height="98.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="fN9-6Y-bzT" secondAttribute="height" multiplier="1:1" id="vWp-6F-URL"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TitilliumWeb-Light" family="Titillium Web" pointSize="38"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="1"/>
+                                                <connections>
+                                                    <action selector="oneButtonOnCLick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="dy1-FZ-cPE"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="fN9-6Y-bzT" firstAttribute="top" secondItem="IbG-B8-iJx" secondAttribute="top" id="Cy1-zA-gAu"/>
+                                            <constraint firstItem="fN9-6Y-bzT" firstAttribute="centerX" secondItem="IbG-B8-iJx" secondAttribute="centerX" id="edX-sL-ujz"/>
+                                            <constraint firstAttribute="bottom" secondItem="fN9-6Y-bzT" secondAttribute="bottom" id="uY4-Ag-zqG"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b6x-mE-59R" userLabel="7 View">
+                                        <rect key="frame" x="0.0" y="197.33333333333331" width="165.66666666666666" height="98.333333333333314"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcQ-f8-DAp">
+                                                <rect key="frame" x="33.666666666666664" y="0.0" width="98.333333333333343" height="98.333333333333329"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="hcQ-f8-DAp" secondAttribute="height" multiplier="1:1" id="Vo3-QV-Svu"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TitilliumWeb-Light" family="Titillium Web" pointSize="38"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="7"/>
+                                                <connections>
+                                                    <action selector="sevenButtonOnClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Mf8-mS-XS1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="hcQ-f8-DAp" secondAttribute="bottom" id="Mlz-7d-8wv"/>
+                                            <constraint firstItem="hcQ-f8-DAp" firstAttribute="centerX" secondItem="b6x-mE-59R" secondAttribute="centerX" id="VFg-by-xbR"/>
+                                            <constraint firstItem="hcQ-f8-DAp" firstAttribute="top" secondItem="b6x-mE-59R" secondAttribute="top" id="sFk-np-qaB"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="77y-KE-jYx" userLabel="point View">
+                                        <rect key="frame" x="0.0" y="295.66666666666669" width="165.66666666666666" height="98.666666666666686"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dm9-wt-9Ev" userLabel="9">
+                                                <rect key="frame" x="33.666666666666664" y="0.0" width="98.333333333333343" height="98.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Dm9-wt-9Ev" secondAttribute="height" multiplier="1:1" id="hjC-63-qie"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TitilliumWeb-Light" family="Titillium Web" pointSize="38"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="."/>
+                                                <connections>
+                                                    <action selector="pointButtonOnClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="zzC-We-6a9"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Dm9-wt-9Ev" firstAttribute="centerX" secondItem="77y-KE-jYx" secondAttribute="centerX" id="9I9-fU-yVr"/>
+                                            <constraint firstItem="Dm9-wt-9Ev" firstAttribute="top" secondItem="77y-KE-jYx" secondAttribute="top" id="Fb0-1a-qnt"/>
+                                            <constraint firstAttribute="bottom" secondItem="Dm9-wt-9Ev" secondAttribute="bottom" id="r42-4I-Nvv"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="77y-KE-jYx" firstAttribute="top" secondItem="b6x-mE-59R" secondAttribute="bottom" id="0bk-Fg-zMC"/>
+                                    <constraint firstAttribute="trailing" secondItem="Mes-SF-Ion" secondAttribute="trailing" id="0dg-bZ-1wP"/>
+                                    <constraint firstItem="BPm-Th-bXK" firstAttribute="leading" secondItem="77y-KE-jYx" secondAttribute="trailing" id="3ZD-sS-0se"/>
+                                    <constraint firstAttribute="trailing" secondItem="WHf-Fj-bTC" secondAttribute="trailing" id="3ow-fb-MiC"/>
+                                    <constraint firstItem="Nmj-oj-FQt" firstAttribute="top" secondItem="5lh-7t-poU" secondAttribute="bottom" id="3uW-Ff-93Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="21x-uW-MdV" secondAttribute="trailing" id="7gb-RM-ERY"/>
+                                    <constraint firstItem="BPm-Th-bXK" firstAttribute="width" secondItem="BPm-Th-bXK" secondAttribute="height" multiplier="1:1" id="8Wt-Wb-zOT"/>
+                                    <constraint firstItem="WHf-Fj-bTC" firstAttribute="height" secondItem="21x-uW-MdV" secondAttribute="height" id="96f-rR-4ci"/>
+                                    <constraint firstItem="ZMM-TN-Nkt" firstAttribute="leading" secondItem="5lh-7t-poU" secondAttribute="trailing" id="9cD-Xn-Phr"/>
+                                    <constraint firstItem="Mes-SF-Ion" firstAttribute="top" secondItem="WHf-Fj-bTC" secondAttribute="bottom" id="Bo6-fm-zAU"/>
+                                    <constraint firstItem="21x-uW-MdV" firstAttribute="leading" secondItem="4DP-wS-weR" secondAttribute="trailing" id="By0-h7-9e6"/>
+                                    <constraint firstItem="b6x-mE-59R" firstAttribute="height" secondItem="4DP-wS-weR" secondAttribute="height" id="CYX-8M-rdb"/>
+                                    <constraint firstItem="21x-uW-MdV" firstAttribute="top" secondItem="chc-OS-egi" secondAttribute="top" id="DDY-7B-vZ5"/>
+                                    <constraint firstItem="5lh-7t-poU" firstAttribute="width" secondItem="5lh-7t-poU" secondAttribute="height" multiplier="1:1" id="FKV-vY-xWD"/>
+                                    <constraint firstItem="BPm-Th-bXK" firstAttribute="width" secondItem="4DP-wS-weR" secondAttribute="width" id="Gbn-Fs-X2r"/>
+                                    <constraint firstItem="4DP-wS-weR" firstAttribute="leading" secondItem="IbG-B8-iJx" secondAttribute="trailing" id="IOg-BL-cfs"/>
+                                    <constraint firstItem="5lh-7t-poU" firstAttribute="centerX" secondItem="chc-OS-egi" secondAttribute="centerX" id="Ik2-Kp-9C7"/>
+                                    <constraint firstItem="b6x-mE-59R" firstAttribute="leading" secondItem="chc-OS-egi" secondAttribute="leading" id="JOa-mj-ccp"/>
+                                    <constraint firstItem="4DP-wS-weR" firstAttribute="centerX" secondItem="chc-OS-egi" secondAttribute="centerX" id="Kz9-Bu-aB4"/>
+                                    <constraint firstItem="Nmj-oj-FQt" firstAttribute="width" secondItem="4DP-wS-weR" secondAttribute="width" id="Om4-GJ-2EQ"/>
+                                    <constraint firstItem="IbG-B8-iJx" firstAttribute="leading" secondItem="chc-OS-egi" secondAttribute="leading" id="Pq6-Lo-d9I"/>
+                                    <constraint firstItem="Nmj-oj-FQt" firstAttribute="width" secondItem="Nmj-oj-FQt" secondAttribute="height" multiplier="1:1" id="QHR-31-TAZ"/>
+                                    <constraint firstItem="b6x-mE-59R" firstAttribute="top" secondItem="hND-uz-VCm" secondAttribute="bottom" id="TB6-Ne-6dl"/>
+                                    <constraint firstItem="WHf-Fj-bTC" firstAttribute="top" secondItem="ZMM-TN-Nkt" secondAttribute="bottom" id="Veh-IN-Jzw"/>
+                                    <constraint firstItem="Mes-SF-Ion" firstAttribute="height" secondItem="4DP-wS-weR" secondAttribute="height" id="WPW-oL-kuV"/>
+                                    <constraint firstItem="4DP-wS-weR" firstAttribute="top" secondItem="chc-OS-egi" secondAttribute="top" id="Xqe-QL-7WX"/>
+                                    <constraint firstItem="BPm-Th-bXK" firstAttribute="top" secondItem="Nmj-oj-FQt" secondAttribute="bottom" id="Y0Y-2I-2Ce"/>
+                                    <constraint firstItem="WHf-Fj-bTC" firstAttribute="leading" secondItem="Nmj-oj-FQt" secondAttribute="trailing" id="bRe-Co-Bww"/>
+                                    <constraint firstItem="77y-KE-jYx" firstAttribute="leading" secondItem="chc-OS-egi" secondAttribute="leading" id="ecq-Sr-qyv"/>
+                                    <constraint firstItem="5lh-7t-poU" firstAttribute="width" secondItem="4DP-wS-weR" secondAttribute="width" id="eex-Ro-obg"/>
+                                    <constraint firstItem="Mes-SF-Ion" firstAttribute="leading" secondItem="BPm-Th-bXK" secondAttribute="trailing" id="fAq-OD-zZU"/>
+                                    <constraint firstItem="21x-uW-MdV" firstAttribute="height" secondItem="4DP-wS-weR" secondAttribute="height" id="fHI-z9-PPe"/>
+                                    <constraint firstItem="77y-KE-jYx" firstAttribute="height" secondItem="4DP-wS-weR" secondAttribute="height" id="fgp-O6-egd"/>
+                                    <constraint firstItem="Nmj-oj-FQt" firstAttribute="leading" secondItem="b6x-mE-59R" secondAttribute="trailing" id="hoG-i1-NcC"/>
+                                    <constraint firstItem="BPm-Th-bXK" firstAttribute="centerX" secondItem="chc-OS-egi" secondAttribute="centerX" id="htu-Nn-CCi"/>
+                                    <constraint firstItem="IbG-B8-iJx" firstAttribute="height" secondItem="4DP-wS-weR" secondAttribute="height" id="ibN-zX-iGm"/>
+                                    <constraint firstItem="Nmj-oj-FQt" firstAttribute="width" secondItem="Nmj-oj-FQt" secondAttribute="height" multiplier="1:1" id="k0D-lr-cmM"/>
+                                    <constraint firstItem="IbG-B8-iJx" firstAttribute="top" secondItem="chc-OS-egi" secondAttribute="top" id="lbe-eC-e9n"/>
+                                    <constraint firstItem="5lh-7t-poU" firstAttribute="leading" secondItem="hND-uz-VCm" secondAttribute="trailing" id="mBb-7x-Lez"/>
+                                    <constraint firstItem="Nmj-oj-FQt" firstAttribute="centerX" secondItem="chc-OS-egi" secondAttribute="centerX" id="ogD-DP-Dtc"/>
+                                    <constraint firstItem="hND-uz-VCm" firstAttribute="height" secondItem="ZMM-TN-Nkt" secondAttribute="height" id="pZk-bM-Pwn"/>
+                                    <constraint firstItem="5lh-7t-poU" firstAttribute="top" secondItem="4DP-wS-weR" secondAttribute="bottom" id="pc6-ye-42Z"/>
+                                    <constraint firstItem="ZMM-TN-Nkt" firstAttribute="height" secondItem="4DP-wS-weR" secondAttribute="height" id="quh-eJ-B9J"/>
+                                    <constraint firstItem="4DP-wS-weR" firstAttribute="height" secondItem="chc-OS-egi" secondAttribute="height" multiplier="0.25" id="rUh-Cs-F6e"/>
+                                    <constraint firstItem="BPm-Th-bXK" firstAttribute="width" secondItem="BPm-Th-bXK" secondAttribute="height" multiplier="1:1" id="rwL-R7-HHR"/>
+                                    <constraint firstItem="BPm-Th-bXK" firstAttribute="width" secondItem="BPm-Th-bXK" secondAttribute="height" multiplier="1:1" id="tcs-gb-MVC"/>
+                                    <constraint firstItem="ZMM-TN-Nkt" firstAttribute="top" secondItem="21x-uW-MdV" secondAttribute="bottom" id="tk8-Hq-gCK"/>
+                                    <constraint firstItem="hND-uz-VCm" firstAttribute="leading" secondItem="chc-OS-egi" secondAttribute="leading" id="wHE-rX-JNP"/>
+                                    <constraint firstItem="hND-uz-VCm" firstAttribute="top" secondItem="IbG-B8-iJx" secondAttribute="bottom" id="x1w-7Q-atO"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZMM-TN-Nkt" secondAttribute="trailing" id="ydX-nH-Vxo"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YKi-Bt-P6I" userLabel="icx View">
+                                <rect key="frame" x="117.66666666666667" y="79" width="194.66666666666663" height="52.666666666666657"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ICX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYZ-K0-6zo">
+                                        <rect key="frame" x="39.999999999999986" y="12.66666666666667" width="154.66666666666663" height="27.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                        <color key="textColor" red="0.050980392156862744" green="0.12156862745098039" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icx" translatesAutoresizingMaskIntoConstraints="NO" id="tcj-rL-tHA">
+                                        <rect key="frame" x="14.999999999999986" y="13.66666666666667" width="25" height="25.333333333333329"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="tcj-rL-tHA" secondAttribute="height" multiplier="1:1" id="IbZ-N4-N6Y"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="tcj-rL-tHA" firstAttribute="height" secondItem="YKi-Bt-P6I" secondAttribute="height" multiplier="22:46" id="5UI-6M-YVl"/>
+                                    <constraint firstItem="TYZ-K0-6zo" firstAttribute="centerY" secondItem="YKi-Bt-P6I" secondAttribute="centerY" id="7ZS-dQ-wLC"/>
+                                    <constraint firstAttribute="trailing" secondItem="TYZ-K0-6zo" secondAttribute="trailing" id="K08-JG-9fX"/>
+                                    <constraint firstAttribute="width" secondItem="YKi-Bt-P6I" secondAttribute="height" multiplier="170:46" id="PeK-zc-oyU"/>
+                                    <constraint firstItem="tcj-rL-tHA" firstAttribute="leading" secondItem="YKi-Bt-P6I" secondAttribute="leading" constant="15" id="PfF-nN-6ww"/>
+                                    <constraint firstItem="tcj-rL-tHA" firstAttribute="centerY" secondItem="YKi-Bt-P6I" secondAttribute="centerY" id="PvV-lI-myt"/>
+                                    <constraint firstItem="TYZ-K0-6zo" firstAttribute="height" secondItem="YKi-Bt-P6I" secondAttribute="height" multiplier="24:46" id="Q1L-ZC-7N7"/>
+                                    <constraint firstItem="TYZ-K0-6zo" firstAttribute="leading" secondItem="tcj-rL-tHA" secondAttribute="trailing" id="oFk-U7-Pgf"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.7845 ICX Available" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eE0-0B-igl">
+                                <rect key="frame" x="5" y="139.66666666666666" width="420" height="23"/>
+                                <fontDescription key="fontDescription" name="TitilliumWeb-Regular" family="Titillium Web" pointSize="15"/>
+                                <color key="textColor" red="0.28235294117647058" green="0.31372549019607843" blue="0.40784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m4d-Pg-UIq" userLabel="number view">
+                                <rect key="frame" x="24" y="195.66666666666666" width="382" height="91.999999999999972"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ib-tF-cPg">
+                                        <rect key="frame" x="0.0" y="63.000000000000028" width="382" height="29"/>
+                                        <fontDescription key="fontDescription" name="TitilliumWeb-Regular" family="Titillium Web" pointSize="19"/>
+                                        <color key="textColor" red="0.70980392156862748" green="0.73333333333333328" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Combined Shape" translatesAutoresizingMaskIntoConstraints="NO" id="b2H-AB-OVI">
+                                        <rect key="frame" x="364" y="32.333333333333343" width="18" height="27"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="18" id="2Bf-CJ-CVO"/>
+                                            <constraint firstAttribute="height" constant="27" id="Y0C-5S-91i"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="azJ-Cv-nyG">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="63"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vh-eG-rcy">
+                                                <rect key="frame" x="0.0" y="6" width="382" height="51"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="1vh-eG-rcy" firstAttribute="centerY" secondItem="azJ-Cv-nyG" secondAttribute="centerY" id="8Oi-87-kaW"/>
+                                            <constraint firstItem="1vh-eG-rcy" firstAttribute="leading" secondItem="azJ-Cv-nyG" secondAttribute="leading" id="Ppb-re-cCK"/>
+                                            <constraint firstAttribute="trailing" secondItem="1vh-eG-rcy" secondAttribute="trailing" id="dxv-rn-RXH"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="b2H-AB-OVI" secondAttribute="trailing" id="GXb-cG-SOE"/>
+                                    <constraint firstItem="azJ-Cv-nyG" firstAttribute="leading" secondItem="m4d-Pg-UIq" secondAttribute="leading" id="OBY-0O-QeZ"/>
+                                    <constraint firstItem="9Ib-tF-cPg" firstAttribute="top" secondItem="azJ-Cv-nyG" secondAttribute="bottom" id="QdZ-ci-ARZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="azJ-Cv-nyG" secondAttribute="trailing" id="WlJ-U9-ygy"/>
+                                    <constraint firstItem="azJ-Cv-nyG" firstAttribute="top" secondItem="m4d-Pg-UIq" secondAttribute="top" id="ZnO-gu-Dhf"/>
+                                    <constraint firstItem="azJ-Cv-nyG" firstAttribute="leading" secondItem="m4d-Pg-UIq" secondAttribute="leading" id="bAk-9p-bMC"/>
+                                    <constraint firstItem="9Ib-tF-cPg" firstAttribute="leading" secondItem="m4d-Pg-UIq" secondAttribute="leading" id="bda-4p-uiM"/>
+                                    <constraint firstAttribute="trailing" secondItem="9Ib-tF-cPg" secondAttribute="trailing" id="ly9-lS-P2i"/>
+                                    <constraint firstItem="b2H-AB-OVI" firstAttribute="centerY" secondItem="m4d-Pg-UIq" secondAttribute="centerY" id="ofd-Va-fTc"/>
+                                    <constraint firstAttribute="bottom" secondItem="9Ib-tF-cPg" secondAttribute="bottom" id="pr6-Yy-PA6"/>
+                                    <constraint firstItem="azJ-Cv-nyG" firstAttribute="top" secondItem="m4d-Pg-UIq" secondAttribute="top" id="q3d-07-9Nz"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6o-3g-v4O" userLabel="Next Button">
+                                <rect key="frame" x="100.33333333333333" y="435" width="229.33333333333337" height="52.666666666666686"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="i6o-3g-v4O" secondAttribute="height" multiplier="200:46" id="VlJ-XT-Vlr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="19"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButtonOnClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0kK-9N-lOg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.92941176470588238" green="0.94509803921568625" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="YKi-Bt-P6I" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.0566" id="05i-Jv-Owd"/>
+                            <constraint firstItem="eE0-0B-igl" firstAttribute="centerX" secondItem="YKi-Bt-P6I" secondAttribute="centerX" id="9sF-sf-oCd"/>
+                            <constraint firstItem="i6o-3g-v4O" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="EGj-eS-ujL"/>
+                            <constraint firstItem="m4d-Pg-UIq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="Iv4-2J-DPM"/>
+                            <constraint firstItem="YKi-Bt-P6I" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="Jrd-th-DMY"/>
+                            <constraint firstItem="i6o-3g-v4O" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="46:812" id="Lhr-23-2S7"/>
+                            <constraint firstItem="chc-OS-egi" firstAttribute="height" secondItem="vDu-zF-Fre" secondAttribute="height" multiplier="0.47" id="Rjy-ZL-qPT"/>
+                            <constraint firstItem="chc-OS-egi" firstAttribute="top" secondItem="i6o-3g-v4O" secondAttribute="bottom" constant="16" id="S3Y-Sw-jf4"/>
+                            <constraint firstItem="m4d-Pg-UIq" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="80:812" id="Ui8-VA-VzH"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="m4d-Pg-UIq" secondAttribute="trailing" constant="24" id="VVO-f5-lWV"/>
+                            <constraint firstItem="eE0-0B-igl" firstAttribute="top" secondItem="YKi-Bt-P6I" secondAttribute="bottom" constant="8" id="Wxb-xC-hxe"/>
+                            <constraint firstItem="chc-OS-egi" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="X1P-Vg-br7"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="chc-OS-egi" secondAttribute="trailing" id="bls-P3-JlI"/>
+                            <constraint firstItem="YKi-Bt-P6I" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="eRi-fZ-4EP"/>
+                            <constraint firstItem="m4d-Pg-UIq" firstAttribute="top" secondItem="eE0-0B-igl" secondAttribute="bottom" constant="33" id="fZH-hq-Z4L"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="chc-OS-egi" secondAttribute="bottom" id="mjC-De-3Zn"/>
+                            <constraint firstItem="eE0-0B-igl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="5" id="tuJ-hQ-di5"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="eE0-0B-igl" secondAttribute="trailing" constant="5" id="zBR-BX-zen"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="balanceText" destination="eE0-0B-igl" id="eYx-KH-sMW"/>
+                        <outlet property="icxView" destination="YKi-Bt-P6I" id="hNl-fz-ByA"/>
+                        <outlet property="icxViewText" destination="TYZ-K0-6zo" id="PaH-RZ-ZnC"/>
+                        <outlet property="nextButton" destination="i6o-3g-v4O" id="4C8-eV-6s9"/>
+                        <outlet property="sentICXText" destination="1vh-eG-rcy" id="NfD-HN-Caw"/>
+                        <outlet property="sentUSDText" destination="9Ib-tF-cPg" id="g8j-Pf-Osf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="519.06976744186045" y="-28.969957081545065"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Combined Shape" width="18" height="27"/>
+        <image name="back" width="46" height="27"/>
+        <image name="icx" width="22" height="22"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

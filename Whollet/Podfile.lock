@@ -1,0 +1,36 @@
+PODS:
+  - BigInt (5.2.0)
+  - CryptoSwift (1.0.0)
+  - ICONKit (0.4.3):
+    - BigInt
+    - CryptoSwift (= 1.0)
+    - secp256k1_swift
+  - secp256k1_swift (1.0.3)
+
+DEPENDENCIES:
+  - ICONKit (from `https://github.com/icon-project/ICONKit`)
+
+SPEC REPOS:
+  trunk:
+    - BigInt
+    - CryptoSwift
+    - secp256k1_swift
+
+EXTERNAL SOURCES:
+  ICONKit:
+    :git: https://github.com/icon-project/ICONKit
+
+CHECKOUT OPTIONS:
+  ICONKit:
+    :commit: b124bb185cfca41add0ddf7cb4de5b1e707926a7
+    :git: https://github.com/icon-project/ICONKit
+
+SPEC CHECKSUMS:
+  BigInt: f668a80089607f521586bbe29513d708491ef2f7
+  CryptoSwift: d81eeaa59dc5a8d03720fe919a6fd07b51f7439f
+  ICONKit: 09dfa3b24087e24da1b3ed910569b93bf5820289
+  secp256k1_swift: 4fc5c4b2d2c6d21ee8ccb868cdc92da12f38bed9
+
+PODFILE CHECKSUM: 41bbe68bddf91bf763e38190d1aa35b3bbe995b8
+
+COCOAPODS: 1.11.3
