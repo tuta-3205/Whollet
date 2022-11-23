@@ -28,7 +28,7 @@
 		90DF85CD2927E6AE0099BC63 /* AmountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DF85CC2927E6AE0099BC63 /* AmountViewModel.swift */; };
 		90DF85CF2927E6B80099BC63 /* AmountViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90DF85CE2927E6B80099BC63 /* AmountViewController.storyboard */; };
 		90DF85D12927E6C10099BC63 /* AmountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DF85D02927E6C10099BC63 /* AmountViewController.swift */; };
-		C00F758B473F77D1CC115E3F /* Pods_Whollet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BAE45A63ACFACBE001F40D0 /* Pods_Whollet.framework */; };
+		A1C761CF8182B330D04CFBC4 /* Pods_Whollet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2C9E2533C3EACE4545EA87 /* Pods_Whollet.framework */; };
 		DD1AF47B2926032600904CC4 /* SpinnerFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD1AF47A2926032600904CC4 /* SpinnerFooter.xib */; };
 		DD1AF47D2926041000904CC4 /* SpinnerFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1AF47C2926041000904CC4 /* SpinnerFooter.swift */; };
 		DD1AF4802926105200904CC4 /* CoinsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1AF47F2926105200904CC4 /* CoinsViewModel.swift */; };
@@ -113,6 +113,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A2C9E2533C3EACE4545EA87 /* Pods_Whollet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Whollet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3478C91AB02A4B1943E9BC0D /* Pods-Whollet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whollet.debug.xcconfig"; path = "Target Support Files/Pods-Whollet/Pods-Whollet.debug.xcconfig"; sourceTree = "<group>"; };
 		8F0EB0C418DAB119CFEF0E1F /* Pods-Whollet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whollet.release.xcconfig"; path = "Target Support Files/Pods-Whollet/Pods-Whollet.release.xcconfig"; sourceTree = "<group>"; };
 		905C72B3292A691B00315E34 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
@@ -137,7 +138,6 @@
 		90DF85CC2927E6AE0099BC63 /* AmountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountViewModel.swift; sourceTree = "<group>"; };
 		90DF85CE2927E6B80099BC63 /* AmountViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AmountViewController.storyboard; sourceTree = "<group>"; };
 		90DF85D02927E6C10099BC63 /* AmountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountViewController.swift; sourceTree = "<group>"; };
-		9BAE45A63ACFACBE001F40D0 /* Pods_Whollet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Whollet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD1AF47A2926032600904CC4 /* SpinnerFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpinnerFooter.xib; sourceTree = "<group>"; };
 		DD1AF47C2926041000904CC4 /* SpinnerFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerFooter.swift; sourceTree = "<group>"; };
 		DD1AF47F2926105200904CC4 /* CoinsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsViewModel.swift; sourceTree = "<group>"; };
@@ -216,7 +216,7 @@
 			files = (
 				DDAA05592924BD22007E61FA /* Reusable in Frameworks */,
 				908316D529290AD000B1486F /* Charts in Frameworks */,
-				C00F758B473F77D1CC115E3F /* Pods_Whollet.framework in Frameworks */,
+				A1C761CF8182B330D04CFBC4 /* Pods_Whollet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +249,7 @@
 		5321885216405F45E8804B91 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9BAE45A63ACFACBE001F40D0 /* Pods_Whollet.framework */,
+				2A2C9E2533C3EACE4545EA87 /* Pods_Whollet.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -684,8 +684,7 @@
 				DD8DCE3C291CFD1400F6BC9F /* Sources */,
 				DD8DCE3D291CFD1400F6BC9F /* Frameworks */,
 				DD8DCE3E291CFD1400F6BC9F /* Resources */,
-				DD20CD43291E4E2E00C8F1EE /* ShellScript */,
-				CFDFE36C4BCD5D53CA664785 /* [CP] Embed Pods Frameworks */,
+				A69120BACD0B212ED93D2A27 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -769,7 +768,7 @@
 			);
 			mainGroup = DD8DCE37291CFD1400F6BC9F;
 			packageReferences = (
-				DDAA05572924BD22007E61FA /* XCRemoteSwiftPackageReference "Reusable" */,
+				DDAA05572924BD22007E61FA /* XCRemoteSwiftPackageReference "Reusable.git" */,
 				908316D329290AD000B1486F /* XCRemoteSwiftPackageReference "Charts" */,
 			);
 			productRefGroup = DD8DCE41291CFD1400F6BC9F /* Products */;
@@ -825,7 +824,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		CFDFE36C4BCD5D53CA664785 /* [CP] Embed Pods Frameworks */ = {
+		A69120BACD0B212ED93D2A27 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -841,23 +840,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Whollet/Pods-Whollet-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		DD20CD43291E4E2E00C8F1EE /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		FD0C14D62C52CBC12AA7EDDC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1298,7 +1280,7 @@
 				version = 4.1.0;
 			};
 		};
-		DDAA05572924BD22007E61FA /* XCRemoteSwiftPackageReference "Reusable" */ = {
+		DDAA05572924BD22007E61FA /* XCRemoteSwiftPackageReference "Reusable.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AliSoftware/Reusable.git";
 			requirement = {
@@ -1316,7 +1298,7 @@
 		};
 		DDAA05582924BD22007E61FA /* Reusable */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DDAA05572924BD22007E61FA /* XCRemoteSwiftPackageReference "Reusable" */;
+			package = DDAA05572924BD22007E61FA /* XCRemoteSwiftPackageReference "Reusable.git" */;
 			productName = Reusable;
 		};
 /* End XCSwiftPackageProductDependency section */
